@@ -1,0 +1,12 @@
+id: THRS-TC054
+title: Threshold enforced across all deal types
+description: Configure a daily threshold of 200 for each deal type in turn (Direct, PG, Preferred, Private
+  Auction, Evergreen PMP), reach 200 plays, and submit a 201st request for each. Verify the threshold
+  is enforced consistently across all deal types (201st play suppressed in all cases).
+preconditions:
+- requires login
+- 'GAP: requires triggering a real ad request and observing whether/how an ad actually serves via the
+  real ad-delivery pipeline (dayparting/pacing/rotation/threshold enforcement etc.) — this is backend
+  ad-serving behavior, not something a browser clicking through the CMS admin UI can cause or verify;
+  needs a real or simulated ad-serving/player environment'
+suite: Player Testing

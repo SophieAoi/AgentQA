@@ -1,0 +1,8 @@
+id: TC_CH_009
+title: Search for a non-existent creative
+description: >
+  On the Content Hub page, type a search query that matches no creative.
+  Verify no matching results are displayed.
+preconditions:
+  - requires login
+suite: Content Hub Extended

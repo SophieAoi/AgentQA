@@ -1,0 +1,7 @@
+id: TC-P-11
+title: DEFAULT with all 7 days shows 'All Days'
+description: Add a Default schedule with all 7 days selected (the default state) and save. Verify the
+  schedule list shows 'All Days'.
+preconditions:
+- requires login
+suite: Day Parting

@@ -1,0 +1,10 @@
+id: TC-001
+title: Create a Guaranteed deal with valid inputs
+description: >
+  Log in, open the Test Campaign, start a new Line Item, fill every required
+  field with valid values (name, Guaranteed purchase type, DSP, buyer/seat,
+  rate, media owner, flight dates, inventory), and save it.
+preconditions:
+  - requires login
+suite: Line Item
+essential: true

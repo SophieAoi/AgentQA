@@ -1,0 +1,10 @@
+id: AD_LG_01
+title: Login with invalid username & password
+description: >
+  Navigate to {{INFLUENCE_BASE_URL}}. On the login page, enter the invalid
+  email "jeki@jeki.co" and the invalid password "Jeki@12", then click
+  Sign In. Verify the text "Invalid credentials" is shown and the user is
+  not allowed into the application.
+preconditions: []
+suite: Login
+essential: true

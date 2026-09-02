@@ -1,0 +1,9 @@
+id: TC-P-07
+title: CUSTOM same date — auto-merge
+description: Add a Custom schedule for May 19 with hours 15:00-17:00 and save, then add another Custom
+  schedule for May 19 with hours 11:00-12:00 and save. Verify a toast appears saying the schedule was
+  merged into Schedule 1 (Custom), and a single Custom entry for May 19 exists with combined hours 11:00-12:00
+  and 15:00-17:00.
+preconditions:
+- requires login
+suite: Day Parting

@@ -1,0 +1,9 @@
+id: TC_DOOH_002
+title: DOOH campaign creative delivers on activation
+description: >
+  Create a DOOH campaign with a video creative, activate it, and verify
+  the creative is actually delivered/played.
+preconditions:
+  - requires login
+  - "GAP: requires a real video creative asset (no video test fixtures exist in this project) and observation of real ad delivery, which requires an actual ad-serving pipeline delivering to a real or simulated player. Source sheet also marks this case Automated: No."
+suite: Planner

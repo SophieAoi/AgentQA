@@ -1,0 +1,7 @@
+id: TC-P-09
+title: CUSTOM still shows date picker
+description: Add a Custom schedule and observe the editor. Verify a single date picker is shown, dates
+  outside the line item's flight range are disabled, and no day-of-week selector is shown.
+preconditions:
+- requires login
+suite: Day Parting

@@ -1,0 +1,42 @@
+id: Ads_DL_LT_25
+title: Deal Activation with valid line item
+description: >
+  Click "Campaigns" in the main navigation (confirmed live: this app calls
+  them "Campaigns" in the UI but "deals" in the URL/backend — the
+  Campaigns page and the deal list are the same page, at /deals). Open an
+  existing campaign/deal (or create one with a unique timestamped name if
+  none exists — see INF_PG_01 for the real campaign-creation field
+  names), then click "New Line Item". The Create Line Item form has
+  several required fields — the "Create Line Item" button is NOT disabled
+  when fields are missing, so a click will appear to succeed but the form
+  actually stays on the same page and shows inline validation errors if
+  any are skipped; treat that outcome as the Line Item NOT having been
+  created. Fill in, in this order: (1) a Line Item Name (any placeholder
+  text); (2) the Media Owner field — click it and select "Jeki" from the
+  dropdown (the form's own default Media Owner has zero real inventory
+  configured on this staging environment and will always fail the
+  inventory-selection step below no matter what else is filled in — this
+  is the one field where the default must be deliberately changed, not
+  left as-is); (3) the Creative Type dropdown (select "Display"); (4) the
+  Inventory Type dropdown if one appears (select "Digital"); (5) the
+  Flight Dates field — this cannot be filled as plain text: click it to
+  open a date-range calendar picker, then click the "Next 7 days"
+  quick-select option in its left-hand panel (do not click individual
+  calendar days). Selecting a range does NOT close the picker or commit
+  the dates by itself — a "Cancel" / "Apply" button pair appears at the
+  bottom of the picker once a range is selected, and the Flight Dates
+  field remains unset until you click "Apply". Once Media Owner, Creative
+  Type, Inventory Type, and Flight Dates are all set, a "Browse All"
+  button becomes enabled — click it to open the inventory/screen picker,
+  click "Select All" to select the available screens, then click "Apply
+  Selection". Only after that, click "Create Line Item" — a successful
+  creation navigates back to the deal's Line Items list (leaving the
+  create-form page) and the deal's "Total Line Items" count increases.
+  Verify the new Line Item appears in the deal's Line Items list, then
+  click "Activate Campaign" (this app's actual button label for
+  activating a deal — not "Activate Deal"). Verify the deal activates
+  successfully with no errors.
+preconditions:
+  - requires login
+suite: Deal Management
+essential: true

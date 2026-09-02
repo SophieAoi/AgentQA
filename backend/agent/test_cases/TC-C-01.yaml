@@ -1,0 +1,9 @@
+id: TC-C-01
+title: Same days, different Spots/loop per time window (limitation)
+description: Add a Default schedule with hours 08:00-10:00 and Spots/loop=2, save, then add Default again
+  and get redirected to Schedule 1 while attempting to set 14:00-16:00 at Spots/loop=1. Verify the UI
+  correctly redirects to the existing schedule with no duplicate created, and the user can only set one
+  Spots/loop value for both windows (a documented limitation, not a bug).
+preconditions:
+- requires login
+suite: Day Parting

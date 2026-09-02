@@ -1,0 +1,7 @@
+id: TC-N-08
+title: Save blocked for CUSTOM with no date
+description: Add a Custom schedule without selecting a date, select some hours, and click 'Save Schedule'.
+  Verify the save is blocked with the message 'Please select a specific date for this custom schedule'.
+preconditions:
+- requires login
+suite: Day Parting

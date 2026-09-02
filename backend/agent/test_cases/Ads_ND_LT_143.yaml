@@ -1,0 +1,10 @@
+id: Ads_ND_LT_143
+title: Rate field mandatory indicator (*) for Programmatic
+description: >
+  Open the Test Campaign, start a new Line Item creation, select
+  Programmatic as the deal type, and navigate to the Cost section. Verify
+  the Rate field is marked as mandatory with a "*" indicator, and that a
+  validation message is shown if it's left empty.
+preconditions:
+  - requires login
+suite: Line Item

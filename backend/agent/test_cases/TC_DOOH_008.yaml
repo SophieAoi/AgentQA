@@ -1,0 +1,10 @@
+id: TC_DOOH_008
+title: Cancel Planner campaign and verify sync to Adserver
+description: >
+  Cancel a campaign in Planner and sync the change to Adserver, then
+  verify the corresponding deal/line item in Influence reflects the
+  cancelled state.
+preconditions:
+  - requires login
+  - "GAP: requires access to a separate external system called \"Planner\" — this project has no configured URL, credentials, or any other access to it; not currently available. Source sheet also marks this case Automated: No."
+suite: Planner

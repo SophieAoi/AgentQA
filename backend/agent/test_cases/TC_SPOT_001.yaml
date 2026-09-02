@@ -1,0 +1,8 @@
+id: TC_SPOT_001
+title: Spot allocation form accepts exactly 6 spots
+description: >
+  Navigate to a line item's spot allocation configuration and enter 6 spots.
+  Verify the form accepts the value and saves successfully.
+preconditions:
+  - requires login
+suite: Planner

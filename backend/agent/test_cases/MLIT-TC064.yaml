@@ -1,0 +1,12 @@
+id: MLIT-TC064
+title: Two line items — equal priority tiebreaker
+description: Configure two line items at identical priority targeting the same placement, then trigger
+  an ad request. Verify the system resolves the tie consistently (e.g. by ID or creation time) and exactly
+  one line item plays.
+preconditions:
+- requires login
+- 'GAP: requires triggering a real ad request and observing whether/how an ad actually serves via the
+  real ad-delivery pipeline (dayparting/pacing/rotation/threshold enforcement etc.) — this is backend
+  ad-serving behavior, not something a browser clicking through the CMS admin UI can cause or verify;
+  needs a real or simulated ad-serving/player environment'
+suite: Player Testing

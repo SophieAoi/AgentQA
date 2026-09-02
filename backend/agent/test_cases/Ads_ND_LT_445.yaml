@@ -1,0 +1,14 @@
+id: Ads_ND_LT_445
+title: Blocked inventory not shown during blackout dates (known bug)
+description: >
+  Add blackout dates to an inventory item, then create (or use) a campaign
+  with the same overlapping dates, and check the inventory recommendations
+  for that campaign. Note: the originally intended behavior was for the
+  blocked inventory to be excluded from recommendations, but the site
+  currently still shows it — a known, separately tracked critical bug
+  (POD-02536). Treat "the blocked inventory still appears in the
+  recommendations despite the blackout dates" as the current
+  expected/pass condition for this check, not a failure.
+preconditions:
+  - requires login
+suite: Inventory

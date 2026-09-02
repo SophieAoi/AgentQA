@@ -1,0 +1,17 @@
+id: Ads_DL_LT_18
+title: Line Item Flight Date past date validation in a Deal (known bug)
+description: >
+  Open a deal and click Add Line Item. Select a Start Date and an End Date
+  that are both in the past, then click Create Line Item. Note: the
+  originally intended behavior was for past dates to be restricted or
+  rejected with a validation error, but the site currently allows past
+  dates and creates the Line Item with an expired status — a known,
+  separately tracked bug. Treat "the Line Item is created with an expired
+  status despite the past dates" as the current expected/pass condition
+  for this check, not a failure. (The source sheet marks this case
+  "Automated: No", but it has no apparent missing fixture or capability
+  gap — it's the same shape as the past-date check already automated in
+  the Line Item suite, so it's included here rather than deferred.)
+preconditions:
+  - requires login
+suite: Deal Management

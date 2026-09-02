@@ -1,0 +1,11 @@
+id: MLIT-TC068
+title: All line items paused simultaneously
+description: Pause all line items at the same time, then trigger an ad request. Verify no ad plays and
+  the player shows a fallback or blank state with no error.
+preconditions:
+- requires login
+- 'GAP: requires triggering a real ad request and observing whether/how an ad actually serves via the
+  real ad-delivery pipeline (dayparting/pacing/rotation/threshold enforcement etc.) — this is backend
+  ad-serving behavior, not something a browser clicking through the CMS admin UI can cause or verify;
+  needs a real or simulated ad-serving/player environment'
+suite: Player Testing

@@ -1,0 +1,10 @@
+id: Ads_ND_LT_210
+title: Mandatory schedule validation
+description: >
+  Open the Test Campaign, start a new or edit an existing Line Item, and
+  try to save it without setting up any schedule. Verify the system
+  enforces at least one schedule — a validation message is shown and the
+  save is blocked.
+preconditions:
+  - requires login
+suite: Line Item

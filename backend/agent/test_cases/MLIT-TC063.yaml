@@ -1,0 +1,12 @@
+id: MLIT-TC063
+title: Two line items — higher priority wins
+description: Configure Line Item A (priority 1) and Line Item B (priority 2) both targeting the same placement,
+  then trigger a matching ad request. Verify the higher-priority Line Item A plays while Line Item B waits
+  for its window.
+preconditions:
+- requires login
+- 'GAP: requires triggering a real ad request and observing whether/how an ad actually serves via the
+  real ad-delivery pipeline (dayparting/pacing/rotation/threshold enforcement etc.) — this is backend
+  ad-serving behavior, not something a browser clicking through the CMS admin UI can cause or verify;
+  needs a real or simulated ad-serving/player environment'
+suite: Player Testing

@@ -1,0 +1,10 @@
+id: TC_PLAYER_020
+title: Player stability after repeated creative changes
+description: Change the assigned creative multiple times, sync the player repeatedly, and monitor playback.
+  Verify the player remains stable and always displays the latest creative.
+preconditions:
+- requires login
+- 'GAP: requires observing an actual physical DOOH player''s real-time playback state — this is outside
+  what any browser-driving UI automation tool can cause or verify, regardless of test fixtures; needs
+  real signage hardware/infrastructure integration'
+suite: Player Testing

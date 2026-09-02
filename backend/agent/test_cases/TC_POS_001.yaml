@@ -1,0 +1,12 @@
+id: TC_POS_001
+title: Create deal with all valid inputs
+description: >
+  Fill in every required field (Deal Name, Deal Type, Brand, Client Type,
+  Country) with valid values — use a unique Deal Name like "Summer
+  Campaign JP" with a timestamp or random suffix appended so repeated runs
+  never collide, and Country = Japan — then click Create Deal. Verify the
+  deal is created successfully.
+preconditions:
+  - requires login
+suite: Deal Management
+essential: true

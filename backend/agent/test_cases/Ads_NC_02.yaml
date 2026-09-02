@@ -1,0 +1,8 @@
+id: Ads_NC_02
+title: Verify Media Type default value
+description: >
+  Navigate to Create Campaign. Verify the Media Type field defaults to
+  "DOOH – Digital Out-of-Home" without any input.
+preconditions:
+  - requires login
+suite: Campaign Creation

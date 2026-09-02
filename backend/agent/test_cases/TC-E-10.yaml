@@ -1,0 +1,7 @@
+id: TC-E-10
+title: Single hour selected (23:00 only)
+description: Add a Default schedule, deselect all hours, select only 23:00, and save. Verify the schedule
+  saves with a single window displayed correctly as 23:00-24:00.
+preconditions:
+- requires login
+suite: Day Parting

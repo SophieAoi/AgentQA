@@ -1,0 +1,11 @@
+id: Ads_Login_N05
+title: Verify Influence access denied when disabled
+description: >
+  As a Super Admin, log in to the Admin Console, navigate to
+  Organizations → Contract → Products, disable the Influence toggle, then
+  log out and log back in as an org user and try to access Influence.
+  Verify an Access Denied page is shown and the user cannot access
+  Influence.
+preconditions:
+  - "GAP: requires Super Admin access to a separate Admin Console (Organizations/Contract/Products toggle), plus a second org-user account — not currently available"
+suite: Login

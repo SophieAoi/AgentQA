@@ -1,0 +1,7 @@
+id: TC-N-10
+title: Weekday editor cannot select Sat or Sun
+description: Add a Weekday schedule and observe the editor. Verify Sat and Sun buttons are disabled/greyed
+  out, Mon-Fri are shown as selected (locked), and a 'Mon-Fri only' label is shown.
+preconditions:
+- requires login
+suite: Day Parting

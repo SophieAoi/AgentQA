@@ -1,0 +1,8 @@
+id: TC-N-05
+title: DEFAULT subset Tuesday + add another DEFAULT Tuesday
+description: With Schedule 1 (Default, Tue only, 08:00-10:00) already existing, add another Default schedule,
+  select Tue only, set hours 14:00-16:00, and save. Verify auto-merge fires with a toast confirming hours
+  merged into Schedule 1 (Default), and Schedule 1 shows both windows on Tuesday.
+preconditions:
+- requires login
+suite: Day Parting

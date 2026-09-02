@@ -1,0 +1,13 @@
+id: Ads_ND_LT_591
+title: Unavailable inventory slots not selectable (known bug)
+description: >
+  Open the details of an inventory item that has some unavailable (grey)
+  slots visible, go to the Availability tab, and try clicking one of the
+  unavailable slots. Note: the originally intended behavior was for
+  unavailable slots to be disabled and non-interactive, but the site
+  currently allows them to be selected — a known, separately tracked bug
+  (POD-02245). Treat "the unavailable slot can be selected/clicked" as the
+  current expected/pass condition for this check, not a failure.
+preconditions:
+  - requires login
+suite: Inventory

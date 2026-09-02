@@ -1,0 +1,11 @@
+id: TC_DOOH_012
+title: Delivery report — Direct campaign, multiple creatives
+description: >
+  Create a Direct campaign, add a single inventory item mapped with a
+  device ID, assign multiple creatives, activate, and check the delivery
+  report. Verify all creatives play and the report shows accurate play
+  counts per creative.
+preconditions:
+  - requires login
+  - "GAP: requires a real physical DOOH player device that actually plays each creative and reports back — this is outside what any browser-driving UI automation tool can cause or verify, regardless of test fixtures; needs real signage hardware/infrastructure integration. Source sheet also marks this case Automated: No."
+suite: Delivery Reports

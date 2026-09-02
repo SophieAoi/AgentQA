@@ -1,0 +1,9 @@
+id: Ads_INV_12
+title: Filter by Billboard type
+description: >
+  Navigate to the Inventory page, select Screen Type = Billboard, then
+  click Apply Filters. Verify the table shows only Billboard-type
+  inventory.
+preconditions:
+  - requires login
+suite: Inventory

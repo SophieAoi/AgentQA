@@ -1,0 +1,9 @@
+id: TC_ADPLAY_001
+title: Ad playback confirmation logged for a delivered spot
+description: >
+  Run a campaign and verify that a playback confirmation log entry is
+  recorded for each delivered spot.
+preconditions:
+  - requires login
+  - "GAP: requires running a real campaign and observing actual ad playback confirmation logs from a real delivery pipeline — no ad-serving/delivery pipeline is available to observe in this environment. Source sheet also marks this case Automated: No."
+suite: Planner

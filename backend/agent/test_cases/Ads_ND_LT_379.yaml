@@ -1,0 +1,12 @@
+id: Ads_ND_LT_379
+title: Total cost correctly displayed for Planner campaigns (known bug)
+description: >
+  Create and approve a campaign in Planner, navigate to Influence, open
+  the corresponding deal, and view the line item. Note: the originally
+  intended behavior was for the total cost to correctly populate from
+  Planner, but it currently shows as 0 — a known, separately tracked bug
+  (POD-02389).
+preconditions:
+  - requires login
+  - "GAP: requires access to a separate external system called \"Planner\" — this project has no configured URL, credentials, or any other access to it; not currently available. Source sheet also marks this case Automated: No."
+suite: Delivery Reports

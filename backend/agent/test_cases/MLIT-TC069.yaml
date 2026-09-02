@@ -1,0 +1,11 @@
+id: MLIT-TC069
+title: Line item with future start date — requests arrive early
+description: Set a line item start date to tomorrow, then trigger an ad request today. Verify the future
+  line item does not play early while other active line items serve normally.
+preconditions:
+- requires login
+- 'GAP: requires triggering a real ad request and observing whether/how an ad actually serves via the
+  real ad-delivery pipeline (dayparting/pacing/rotation/threshold enforcement etc.) — this is backend
+  ad-serving behavior, not something a browser clicking through the CMS admin UI can cause or verify;
+  needs a real or simulated ad-serving/player environment'
+suite: Player Testing

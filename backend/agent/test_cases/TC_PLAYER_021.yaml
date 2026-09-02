@@ -1,0 +1,11 @@
+id: TC_PLAYER_021
+title: Player stable during day parting & play time updates
+description: Start creative playback, then add/edit day parting while it is playing, change the play time,
+  sync the player, and monitor. Verify the player stays stable and applies the updated day parting/play
+  time without interruption.
+preconditions:
+- requires login
+- 'GAP: requires observing an actual physical DOOH player''s real-time playback state — this is outside
+  what any browser-driving UI automation tool can cause or verify, regardless of test fixtures; needs
+  real signage hardware/infrastructure integration'
+suite: Player Testing

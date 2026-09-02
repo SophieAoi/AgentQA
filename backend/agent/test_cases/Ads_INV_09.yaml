@@ -1,0 +1,9 @@
+id: Ads_INV_09
+title: Inventory pagination
+description: >
+  Navigate to the Inventory page, where total records exceed 10. Scroll to
+  the bottom and click the Next (>) button. Verify the app navigates to
+  the second page and the displayed records update.
+preconditions:
+  - requires login
+suite: Inventory

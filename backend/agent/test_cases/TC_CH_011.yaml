@@ -1,0 +1,10 @@
+id: TC_CH_011
+title: Toggle grid view / list view
+description: >
+  With at least one creative already existing in Content Hub, switch to
+  list view, then back to grid view. Verify list view shows Name/Status/
+  Dimensions columns and grid view hides them.
+preconditions:
+  - requires login
+  - "GAP: requires at least one real, already-uploaded test creative to exist in Content Hub to view — no test media assets are configured for this project; not currently available."
+suite: Content Hub Extended

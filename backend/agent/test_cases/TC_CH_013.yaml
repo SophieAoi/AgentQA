@@ -1,0 +1,9 @@
+id: TC_CH_013
+title: Reject a creative
+description: >
+  Upload a creative, open its details while it is pending moderation, and
+  click Reject. Verify the status badge reads "Inadequate".
+preconditions:
+  - requires login
+  - "GAP: requires a real test creative to upload before it can be rejected — no test media assets are configured for this project; not currently available. Source sheet also marks this case Automated: No."
+suite: Content Hub Extended

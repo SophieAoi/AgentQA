@@ -1,0 +1,11 @@
+id: TC_PLAYER_022
+title: Creative stops playback outside configured day parting
+description: Configure day parting 01:00 PM–10:00 PM with a CMS window of 01:00 PM–11:00 PM, sync the
+  player, and verify playback during the 11 PM hour. Verify the creative stops at 10:00 PM and does not
+  play during the 11 PM hour (day parting must override the CMS schedule).
+preconditions:
+- requires login
+- 'GAP: requires observing an actual physical DOOH player''s real-time playback state — this is outside
+  what any browser-driving UI automation tool can cause or verify, regardless of test fixtures; needs
+  real signage hardware/infrastructure integration'
+suite: Player Testing

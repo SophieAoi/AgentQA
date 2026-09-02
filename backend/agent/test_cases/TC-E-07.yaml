@@ -1,0 +1,8 @@
+id: TC-E-07
+title: Custom all 24 hours vs Default all hours
+description: Add a Default schedule selecting all hours and save, then add a Custom schedule selecting
+  all hours and save. Verify a conflict is raised because the Custom all-day hours clash with the Default
+  all-day hours.
+preconditions:
+- requires login
+suite: Day Parting

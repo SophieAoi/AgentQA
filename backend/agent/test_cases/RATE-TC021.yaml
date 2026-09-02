@@ -1,0 +1,10 @@
+id: RATE-TC021
+title: Zero rate — free remnant placement
+description: Set CPM to $0 for remnant inventory, submit an ad request, and observe serving. Verify the
+  ad serves without charge and plays normally.
+preconditions:
+- requires login
+- 'GAP: requires a real DSP/SSP bidding integration (RTB auction mechanics, bid submission, rate sync)
+  — this project has no configured demand-side/supply-side ad-tech integration to exercise; not currently
+  available'
+suite: Player Testing

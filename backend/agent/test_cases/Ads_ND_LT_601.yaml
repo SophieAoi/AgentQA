@@ -1,0 +1,22 @@
+id: Ads_ND_LT_601
+title: Prevent duplicate folder names (known bug — possibly since fixed)
+description: >
+  Navigate to Creatives and create a folder named "Test" (append a
+  timestamp for the FIRST folder's name isn't needed here since the point
+  is the duplicate — but do prefix both names with a run-specific token,
+  e.g. "Test-<timestamp>", so this test doesn't collide with folders left
+  over from previous runs; create the SAME exact name twice in a row).
+  Note: the originally intended behavior was for the system to block the
+  second creation with a validation error, and the source sheet's own
+  actual-result data says it currently doesn't (duplicate folder created
+  successfully) — a known, tracked bug. However, the sheet's notes also
+  say the related ticket (POD-02041) was later marked "Fixed", which may
+  or may not have addressed this specific behavior. Treat "the duplicate
+  folder is created without a validation error" as the current
+  expected/pass condition for this check; if this test instead reports
+  FAILED because a validation error DID appear, that's a meaningful signal
+  the fix landed for real — not necessarily a new regression — and worth a
+  human double-checking rather than assuming the automation is wrong.
+preconditions:
+  - requires login
+suite: Content Hub

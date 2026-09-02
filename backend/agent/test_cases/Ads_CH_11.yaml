@@ -1,0 +1,9 @@
+id: Ads_CH_11
+title: Approve video creative
+description: >
+  Navigate to Creatives, select an uploaded video, and click Approve.
+  Verify the video is approved successfully.
+preconditions:
+  - requires login
+  - "GAP: requires a real test video file to already be uploaded so it can be selected and approved — no test media assets are configured for this project; not currently available"
+suite: Content Hub

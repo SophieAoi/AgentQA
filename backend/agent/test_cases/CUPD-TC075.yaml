@@ -1,0 +1,11 @@
+id: CUPD-TC075
+title: Creative update changes aspect ratio — incompatible
+description: With an active creative in the correct ratio, upload a replacement in the wrong aspect ratio,
+  approve it, and trigger a request. Verify the player rejects the updated creative (the previous approved
+  version plays if cached).
+preconditions:
+- requires login
+- 'GAP: requires both a real test creative/media asset AND observing an actual physical player''s real-time
+  playback/rendering behavior — no test media assets are configured for this project, and real player
+  observation is outside what browser-driving UI automation can verify; not currently available'
+suite: Player Testing

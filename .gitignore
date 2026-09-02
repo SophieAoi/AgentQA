@@ -1,0 +1,27 @@
+# Environment / secrets
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# Node
+node_modules/
+dist/
+
+# Playwright
+test-results/
+playwright-report/
+backend/screenshots/*.png
+
+# Local runtime state (agent/flakiness_tracker.py) — machine-specific
+# accumulated history, not something to commit or share across clones.
+backend/data/
+
+# OS
+.DS_Store

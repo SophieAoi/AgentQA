@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head><title>Unlabeled Input Fixture</title></head>
+<body>
+  <!--
+    Reproduces the real Influence login form's markup, confirmed live:
+    a <label> with no `for=` attribute, sitting as a plain sibling of the
+    <input> it visually labels — no aria-label, no id/for association at
+    all, so the label text never becomes part of the input's accessible
+    name and every accessible-name-based mechanical tier (primary,
+    fallback_role, fallback_keyword) has nothing to match against.
+  -->
+  <div>
+    <label>Email / Username *</label>
+    <div><input placeholder="Ex : you@company.com" type="text"></div>
+  </div>
+  <div>
+    <label>Password *</label>
+    <div><input placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;" type="password"></div>
+  </div>
+  <button type="submit">Sign In</button>
+</body>
+</html>

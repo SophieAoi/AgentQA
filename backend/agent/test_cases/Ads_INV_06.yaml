@@ -1,0 +1,9 @@
+id: Ads_INV_06
+title: Status filter — Online screens only
+description: >
+  Navigate to the Inventory page, click Filters, select Status = Online,
+  then click Apply Filters. Verify the table refreshes to show only
+  screens with Online status.
+preconditions:
+  - requires login
+suite: Inventory

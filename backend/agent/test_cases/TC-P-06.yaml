@@ -1,0 +1,8 @@
+id: TC-P-06
+title: CUSTOM schedules on different dates
+description: Add a Custom schedule for May 19 with hours 11:00-13:00 and save, then add another Custom
+  schedule for May 20 with hours 11:00-13:00 and save. Verify no toast/conflict appears and two separate
+  Custom entries exist with their respective dates.
+preconditions:
+- requires login
+suite: Day Parting

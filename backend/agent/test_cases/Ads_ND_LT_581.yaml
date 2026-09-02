@@ -1,0 +1,12 @@
+id: Ads_ND_LT_581
+title: Non-video inventories also shown when video creative selected (known bug)
+description: >
+  Select a video creative, then fetch inventories. Note: the originally
+  intended behavior was for only video-format inventories to display,
+  but audio and other formats are currently also shown — a known,
+  separately tracked bug (POD-02330, "Showing Audio format when choose
+  video as creative").
+preconditions:
+  - requires login
+  - "GAP: requires an existing video creative already uploaded to select from — no video test fixtures exist in this project to create one. Source sheet marks this case Automated: Yes, but no such fixture is available here."
+suite: Creative Types

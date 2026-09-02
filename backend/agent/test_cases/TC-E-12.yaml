@@ -1,0 +1,7 @@
+id: TC-E-12
+title: Non-consecutive hours selection
+description: Add a Default schedule and select only hours 02:00, 07:00, 15:00, and 22:00, then save. Verify
+  4 separate time windows are saved and displayed correctly.
+preconditions:
+- requires login
+suite: Day Parting

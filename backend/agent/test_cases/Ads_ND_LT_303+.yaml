@@ -1,0 +1,10 @@
+id: Ads_ND_LT_303+
+title: Line Item creation with valid future dates
+description: >
+  Open the Test Campaign, start a new Line Item, and select valid future
+  start and end dates in Campaign Dates. Fill every other required field
+  with valid values, then click Save. Verify the Line Item is created
+  successfully.
+preconditions:
+  - requires login
+suite: Line Item

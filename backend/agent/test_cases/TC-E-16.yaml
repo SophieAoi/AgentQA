@@ -1,0 +1,7 @@
+id: TC-E-16
+title: Single day flight — Custom DatePicker
+description: Create a line item with the same start and end date, then add a Custom schedule and open
+  the date picker. Verify only one date is available and selectable.
+preconditions:
+- requires login
+suite: Day Parting

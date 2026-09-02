@@ -1,0 +1,9 @@
+id: TC_IMP_002
+title: Impression count updates in near real time during active delivery
+description: >
+  While a campaign is actively delivering, monitor the impression count
+  over time and verify it updates as spots are played.
+preconditions:
+  - requires login
+  - "GAP: requires running a real campaign and monitoring actual ad-serving impression numbers in real time during delivery — no ad-serving/delivery pipeline is available to observe in this environment. Source sheet also marks this case Automated: No."
+suite: Planner

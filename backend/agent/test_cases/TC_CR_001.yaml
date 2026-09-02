@@ -1,0 +1,9 @@
+id: TC_CR_001
+title: Image creative upload (.jpg/.png)
+description: >
+  With a campaign already created, go to the creatives section and upload
+  an image file (.jpg or .png). Verify the image uploads successfully.
+preconditions:
+  - requires login
+  - "GAP: requires a real image creative asset to upload — no image test fixtures exist in this project. Source sheet marks this case Automated: Yes, but no such fixture is available here."
+suite: Creative Types

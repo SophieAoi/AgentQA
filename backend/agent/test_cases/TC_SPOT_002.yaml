@@ -1,0 +1,10 @@
+id: TC_SPOT_002
+title: Spot allocation form blocks a 7th spot
+description: >
+  Navigate to a line item's spot allocation configuration and attempt to
+  enter 7 spots. Verify the form rejects the value or shows a validation
+  error and does not save.
+preconditions:
+  - requires login
+suite: Planner
+essential: true

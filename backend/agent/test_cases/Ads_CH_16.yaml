@@ -1,0 +1,12 @@
+id: Ads_CH_16
+title: Delete video creative (known bug)
+description: >
+  Select an existing video creative, then click Delete. Note: the
+  originally intended behavior was for the creative to be deleted
+  successfully, but the site's delete button currently doesn't work — a
+  known, separately tracked bug. Treat "the delete action does not
+  succeed" as the current expected/pass condition.
+preconditions:
+  - requires login
+  - "GAP: requires a real, already-uploaded test video file to select — no test media assets are configured for this project; not currently available"
+suite: Content Hub

@@ -1,0 +1,9 @@
+id: AD_LG_03
+title: Login with valid email & invalid password
+description: >
+  Navigate to {{INFLUENCE_BASE_URL}}. On the login page, fill the Email
+  field with {{VALID_EMAIL}} and enter the invalid password "Jeki@12", then
+  click Sign In. Verify the text "Invalid credentials" is shown and the
+  user remains on the login page.
+preconditions: []
+suite: Login

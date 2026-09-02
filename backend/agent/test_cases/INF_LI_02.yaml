@@ -1,0 +1,13 @@
+id: INF_LI_02
+title: Create new Line Item with all mandatory fields
+description: >
+  Open the Test Campaign, click "New Line Item" (confirmed live: the real
+  button has no "+" in its label), enter a Line Item Name, select a
+  Creative Type, select a Duration, select Flight Dates, and set a
+  Budget, then click Create Line Item. Verify the Line Item is created
+  and added to the Line Items table, showing its Name, Dates, Resolution,
+  and Target Inventories.
+preconditions:
+  - requires login
+suite: Line Item
+essential: true

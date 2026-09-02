@@ -1,0 +1,9 @@
+id: TC_CH_003
+title: Cancel New Folder panel
+description: >
+  Open the New Folder panel, fill in a folder name, then click Cancel
+  instead of submitting. Verify the panel closes and the folder is not
+  created.
+preconditions:
+  - requires login
+suite: Content Hub Extended

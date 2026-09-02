@@ -1,0 +1,10 @@
+id: CUPD-TC074
+title: Creative deleted and immediately replaced
+description: Delete an active creative, then immediately upload and approve a replacement, and trigger
+  an ad request. Verify the player transitions to the replacement without serving a blank state.
+preconditions:
+- requires login
+- 'GAP: requires both a real test creative/media asset AND observing an actual physical player''s real-time
+  playback/rendering behavior — no test media assets are configured for this project, and real player
+  observation is outside what browser-driving UI automation can verify; not currently available'
+suite: Player Testing

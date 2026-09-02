@@ -1,0 +1,11 @@
+id: THRS-TC045
+title: Daily threshold — resets at midnight for next day
+description: Reach 200 plays on Day 1, wait for the midnight rollover, then trigger a request on Day 2.
+  Verify the threshold resets at midnight and the ad serves normally from a Day 2 count of 0.
+preconditions:
+- requires login
+- 'GAP: requires triggering a real ad request and observing whether/how an ad actually serves via the
+  real ad-delivery pipeline (dayparting/pacing/rotation/threshold enforcement etc.) — this is backend
+  ad-serving behavior, not something a browser clicking through the CMS admin UI can cause or verify;
+  needs a real or simulated ad-serving/player environment'
+suite: Player Testing

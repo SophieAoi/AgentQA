@@ -1,0 +1,10 @@
+id: Ads_ND_LT_229
+title: Reject creative below minimum duration tolerance
+description: >
+  Create a Line Item with a 15s duration, then attempt to assign a
+  creative asset shorter than 14s. Verify the creative is rejected with a
+  validation error.
+preconditions:
+  - requires login
+  - "GAP: requires a real test creative asset file shorter than 14s to upload/assign — no test media assets are configured for this project; the source sheet itself also marks this case as not automated"
+suite: Line Item

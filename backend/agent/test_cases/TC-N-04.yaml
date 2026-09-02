@@ -1,0 +1,7 @@
+id: TC-N-04
+title: Add DEFAULT when WEEKDAY exists (no overlap)
+description: With Schedule 1 (Weekday, Mon-Fri) already existing, add a Default schedule. Verify no conflict
+  is raised (different day sets — all 7 days vs. Mon-Fri) and a new Default editor opens normally.
+preconditions:
+- requires login
+suite: Day Parting

@@ -1,0 +1,15 @@
+id: TC_NEG_006
+title: Deal Name — SQL injection input sanitization
+description: >
+  On the Create Deal page, enter the literal text "' OR 1=1 --" into the
+  Deal Name field, then click Create. This is an input-sanitization check,
+  not an exploit attempt: verify the application handles the string
+  safely — either rejecting/sanitizing it with a validation error, or (if
+  accepted) storing and displaying it back as inert literal text with no
+  application error, crash, or unexpected behavior. The check fails only
+  if the app visibly errors out (e.g. a server error page) or otherwise
+  behaves as though the string were interpreted as executable code rather
+  than plain text.
+preconditions:
+  - requires login
+suite: Deal Management

@@ -1,0 +1,10 @@
+id: Ads_ND_LT_303
+title: Restriction on selecting past start date
+description: >
+  Open the Test Campaign, start a new Line Item, and in the Campaign Dates
+  field try selecting a start date that's in the past. Verify past-date
+  selection is either restricted outright (the date picker doesn't allow
+  choosing it) or a validation error is shown if it's entered.
+preconditions:
+  - requires login
+suite: Line Item

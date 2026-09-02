@@ -1,0 +1,9 @@
+id: Ads_Login_N02
+title: Login failure — wrong password for valid email
+description: >
+  Navigate to {{INFLUENCE_BASE_URL}}. On the sign-in page, fill the Email
+  field with {{VALID_EMAIL}} and enter an intentionally wrong password
+  (e.g. "wrong_password"), then click Sign In. Verify an error is shown,
+  login fails, and the user stays on the login page.
+preconditions: []
+suite: Login

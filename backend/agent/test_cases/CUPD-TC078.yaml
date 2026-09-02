@@ -1,0 +1,11 @@
+id: CUPD-TC078
+title: Multiple creatives updated simultaneously across line items
+description: Update the creative on Line Items A, B, and C simultaneously, approve all, and trigger requests
+  for each. Verify the player processes all updates correctly (each line item plays its correct new creative,
+  no cross-play).
+preconditions:
+- requires login
+- 'GAP: requires both a real test creative/media asset AND observing an actual physical player''s real-time
+  playback/rendering behavior — no test media assets are configured for this project, and real player
+  observation is outside what browser-driving UI automation can verify; not currently available'
+suite: Player Testing

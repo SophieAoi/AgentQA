@@ -1,0 +1,9 @@
+id: TC_PLAYER_009
+title: Invalid video format rejected (.wmv, .flv)
+description: Attempt to upload an unsupported video format (.wmv or .flv) and save. Verify the system
+  rejects the unsupported format.
+preconditions:
+- requires login
+- 'GAP: requires a real test creative/media asset file with specific properties (resolution/duration/format/type)
+  to upload — no test media assets are configured for this project; not currently available'
+suite: Player Testing

@@ -1,0 +1,12 @@
+id: THRS-TC053
+title: Threshold + goal interaction — cap hit before goal
+description: Set a daily cap of 200 and a 7-day impression goal of 1000, reach 200 plays on Day 1, and
+  trigger more requests the same day. Verify serving stops at 200 for Day 1, resumes on Day 2, and the
+  goal is tracked across all days.
+preconditions:
+- requires login
+- 'GAP: requires triggering a real ad request and observing whether/how an ad actually serves via the
+  real ad-delivery pipeline (dayparting/pacing/rotation/threshold enforcement etc.) — this is backend
+  ad-serving behavior, not something a browser clicking through the CMS admin UI can cause or verify;
+  needs a real or simulated ad-serving/player environment'
+suite: Player Testing

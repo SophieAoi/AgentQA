@@ -1,0 +1,8 @@
+id: TC-E-05
+title: Custom on flight first and last day
+description: Add a Custom schedule selecting the line item's flight start date and save, then add another
+  Custom schedule selecting the flight end date and save. Verify two separate Custom entries are saved
+  correctly for the boundary dates.
+preconditions:
+- requires login
+suite: Day Parting

@@ -1,0 +1,12 @@
+id: Ads_CH_12
+title: Video < 5 seconds should NOT be approved (known bug)
+description: >
+  Upload a video shorter than 5 seconds, then click Approve. Note: the
+  originally intended behavior was for approval to be rejected for videos
+  shorter than 5 seconds, but the site currently approves them anyway — a
+  known, separately tracked bug. Treat "the short video gets approved" as
+  the current expected/pass condition.
+preconditions:
+  - requires login
+  - "GAP: requires a real test video file shorter than 5 seconds — no test media assets are configured for this project; not currently available. Source sheet also marks this case Automated: No."
+suite: Content Hub

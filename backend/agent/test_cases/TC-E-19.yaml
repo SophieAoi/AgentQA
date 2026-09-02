@@ -1,0 +1,7 @@
+id: TC-E-19
+title: Rapid-click Add Schedule multiple times
+description: Click 'Add Schedule' rapidly 3-5 times in quick succession. Verify only one editor opens,
+  with no duplicate editors or duplicate schedule entries created.
+preconditions:
+- requires login
+suite: Day Parting

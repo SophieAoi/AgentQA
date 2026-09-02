@@ -1,0 +1,12 @@
+id: Ads_CH_03
+title: Video plays when 'View' is clicked (known bug)
+description: >
+  Navigate to Creatives, upload a video file, then click View on the
+  uploaded video. Note: the originally intended behavior was for the
+  video to play, but it currently does not — a known, separately tracked
+  bug. Treat "the video does not play when View is clicked" as the
+  current expected/pass condition.
+preconditions:
+  - requires login
+  - "GAP: requires a real test video file to upload before this check can even be attempted — no test media assets are configured for this project; not currently available"
+suite: Content Hub

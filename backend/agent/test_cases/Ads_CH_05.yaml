@@ -1,0 +1,10 @@
+id: Ads_CH_05
+title: Create new folder
+description: >
+  Navigate to Creatives, click New Folder, enter a unique folder name
+  (include a timestamp or random suffix so repeated runs never collide),
+  then Save. Verify the folder is created successfully.
+preconditions:
+  - requires login
+suite: Content Hub
+essential: true

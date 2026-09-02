@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Test Run Report — {{ run.run_id }}</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; margin: 0; padding: 32px; color: #1a1a1a; background: #fff; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .subtitle { color: #666; font-size: 13px; margin-bottom: 24px; }
+  .summary { display: flex; gap: 16px; margin-bottom: 28px; }
+  .summary-card { flex: 1; border: 1px solid #e0e0e0; border-radius: 8px; padding: 14px 16px; }
+  .summary-card .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: #888; }
+  .summary-card .value { font-size: 22px; font-weight: 700; margin-top: 4px; }
+  .status-passed { color: #1a7f37; }
+  .status-failed, .status-error { color: #cf222e; }
+  .status-running, .status-queued { color: #9a6700; }
+  section { margin-bottom: 28px; }
+  h2 { font-size: 15px; border-bottom: 1px solid #e0e0e0; padding-bottom: 6px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #eee; vertical-align: top; }
+  th { color: #888; font-weight: 600; font-size: 11px; text-transform: uppercase; }
+  .pill { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 700; }
+  .pill-ok { background: #daf5e0; color: #1a7f37; }
+  .pill-failed { background: #ffe4e2; color: #cf222e; }
+  .pill-error { background: #ffe9d6; color: #a34e00; }
+  .detail { color: #555; font-size: 12px; margin-top: 2px; white-space: pre-wrap; }
+  .confidence { color: #888; font-size: 11px; }
+  .screenshot { max-width: 320px; border: 1px solid #ddd; border-radius: 4px; margin-top: 6px; display: block; }
+  .empty { color: #888; font-size: 13px; font-style: italic; }
+</style>
+</head>
+<body>
+  <h1>Test Run Report</h1>
+  <div class="subtitle">
+    Run {{ run.run_id }} — started {{ run.started_at }}{% if run.finished_at %}, finished {{ run.finished_at }}{% endif %}
+  </div>
+
+  <div class="summary">
+    <div class="summary-card">
+      <div class="label">Status</div>
+      <div class="value status-{{ run.status.value }}">{{ run.status.value }}</div>
+    </div>
+    <div class="summary-card">
+      <div class="label">Passed</div>
+      <div class="value status-passed">{{ run.passed_count }}</div>
+    </div>
+    <div class="summary-card">
+      <div class="label">Failed</div>
+      <div class="value status-failed">{{ run.failed_count }}</div>
+    </div>
+    <div class="summary-card">
+      <div class="label">Total</div>
+      <div class="value">{{ run.total_count }}</div>
+    </div>
+  </div>
+
+  <section>
+    <h2>Step Summary</h2>
+    {% if run.steps %}
+    <table>
+      <thead>
+        <tr><th>#</th><th>Step</th><th>Status</th><th>Detail</th></tr>
+      </thead>
+      <tbody>
+        {% for step in run.steps %}
+        <tr>
+          <td>{{ loop.index }}</td>
+          <td>{{ step.step_description }}</td>
+          <td>
+            <span class="pill pill-{{ 'ok' if step.status == 'OK' else ('error' if step.status == 'ERROR' else 'failed') }}">
+              {{ step.status }}
+            </span>
+          </td>
+          <td>
+            {% if step.detail %}<div class="detail">{{ step.detail }}</div>{% endif %}
+            {% if step.screenshot_url %}
+              <img class="screenshot" src="{{ backend_base_url }}{{ step.screenshot_url }}" alt="Step screenshot">
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+    <div class="empty">No steps recorded for this run.</div>
+    {% endif %}
+  </section>
+
+  <section>
+    <h2>Execution Detail</h2>
+    {% if execution_steps %}
+    <table>
+      <thead>
+        <tr><th>#</th><th>Tool</th><th>Intent</th><th>Result</th><th>Confidence</th></tr>
+      </thead>
+      <tbody>
+        {% for step in execution_steps %}
+        <tr>
+          <td>{{ step.step_index }}</td>
+          <td>{{ step.tool_name or step.step_type.value }}</td>
+          <td>
+            {{ step.intent }}
+            {% if step.selector_used %}<div class="detail">selector: {{ step.selector_used }} ({{ step.selector_strategy.value if step.selector_strategy else '' }})</div>{% endif %}
+          </td>
+          <td>
+            <span class="pill pill-{{ 'ok' if step.status.value == 'passed' else ('error' if step.status.value == 'error' else 'failed') }}">
+              {{ step.status.value }}
+            </span>
+            {% if step.actual_result %}<div class="detail">{{ step.actual_result }}</div>{% endif %}
+            {% if step.error_detail %}<div class="detail">{{ step.error_detail }}</div>{% endif %}
+            {% if step.screenshot_url %}
+              <img class="screenshot" src="{{ backend_base_url }}{{ step.screenshot_url }}" alt="Execution step screenshot">
+            {% endif %}
+          </td>
+          <td>{% if step.confidence is not none %}<span class="confidence">{{ "%.0f"|format(step.confidence * 100) }}%</span>{% endif %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+    <div class="empty">No execution trace recorded for this run.</div>
+    {% endif %}
+  </section>
+</body>
+</html>

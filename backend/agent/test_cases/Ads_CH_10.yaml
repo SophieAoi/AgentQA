@@ -1,0 +1,12 @@
+id: Ads_CH_10
+title: Remove creative before approval (known bug)
+description: >
+  Upload a video, then click Remove before approving it. Note: the
+  originally intended behavior was for the creative to be removed
+  successfully, but the site currently fails to remove it — a known,
+  separately tracked bug. Treat "the remove action does not succeed" as
+  the current expected/pass condition.
+preconditions:
+  - requires login
+  - "GAP: requires a real test video file to upload before this check can even be attempted — no test media assets are configured for this project; not currently available"
+suite: Content Hub

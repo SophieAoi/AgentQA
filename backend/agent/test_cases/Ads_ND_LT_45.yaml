@@ -1,0 +1,10 @@
+id: Ads_ND_LT_45
+title: System allows selection of 100+ inventories
+description: >
+  Create a campaign/line item, run the recommendation, select more than
+  100 inventories, and proceed. Verify the system allows the selection
+  without a server error.
+preconditions:
+  - requires login
+  - "GAP: requires 100+ individual inventory-selection actions in one test case — with this agent's per-action local-model latency (each click is a real model call, several seconds each), selecting 100+ items would take well over the per-test-case wall-clock timeout. Not automatable as literally specified without either a bulk-select UI affordance or a major latency improvement; not currently available."
+suite: Line Item

@@ -1,0 +1,16 @@
+id: Ads_DL_LT_19
+title: Inventory Availability shows 100% when all screens Unavailable (known bug)
+description: >
+  Open a deal and click Add Line Item. Select an inventory that has 3
+  screens, all currently marked Unavailable (if you can't find one showing
+  0% real availability with all screens Unavailable, use the
+  closest-matching fully-unavailable inventory you can locate). Check the
+  availability summary. Note: the originally intended behavior was for the
+  summary to show 0% (since all screens are unavailable), but the site
+  currently shows 100% available — a known, separately tracked critical
+  bug. Treat "the availability summary shows 100% despite all screens
+  being Unavailable" as the current expected/pass condition for this
+  check, not a failure.
+preconditions:
+  - requires login
+suite: Deal Management

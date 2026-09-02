@@ -1,0 +1,10 @@
+id: Ads_Login_N06
+title: Account lockout after multiple failed login attempts
+description: >
+  Enter a valid email with the wrong password and click Sign In repeatedly
+  (5+ times). Verify the account locks after N failed attempts and a
+  message such as "Too many failed attempts. Try again in X minutes." is
+  shown.
+preconditions:
+  - "GAP: source sheet marks this a brute-force/lockout check requiring repeated real attempts against a live account — a fresh-browser-per-run design isn't a good fit for verifying accumulated lockout state, and no disposable lockout-test account exists"
+suite: Login

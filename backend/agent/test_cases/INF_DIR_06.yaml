@@ -1,0 +1,9 @@
+id: INF_DIR_06
+title: Verify Goal Type dropdown options for Direct campaign
+description: >
+  Click "+ Create Campaign", select Direct as the deal type, then open the
+  Goal Type dropdown. Verify it shows exactly these four options:
+  Impressions, Reach, Share of Voice, and Ad Plays.
+preconditions:
+  - requires login
+suite: Campaign Creation

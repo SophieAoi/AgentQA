@@ -1,0 +1,9 @@
+id: TC-N-01
+title: Add DEFAULT when DEFAULT already exists — fresh editor, merge on Save
+description: With Schedule 1 (Default, All Days, 08:00-10:00) already existing, click the main 'Add Schedule'
+  button. Verify a fresh editor opens (not Schedule 1). In the new editor select hours 14:00-16:00 and
+  save. Verify a toast confirms the hours were merged into Schedule 1 (Default), Schedule 1 now shows
+  both windows (08:00-10:00 and 14:00-16:00), and no duplicate schedule remains.
+preconditions:
+- requires login
+suite: Day Parting

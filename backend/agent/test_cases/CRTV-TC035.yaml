@@ -1,0 +1,10 @@
+id: CRTV-TC035
+title: Correct format creative — renders on player
+description: Upload an approved creative in the correct aspect ratio/format for the placement, trigger
+  an ad request, and observe the player render. Verify the creative renders with correct timing and dimensions.
+preconditions:
+- requires login
+- 'GAP: requires both a real test creative/media asset AND observing an actual physical player''s real-time
+  playback/rendering behavior — no test media assets are configured for this project, and real player
+  observation is outside what browser-driving UI automation can verify; not currently available'
+suite: Player Testing

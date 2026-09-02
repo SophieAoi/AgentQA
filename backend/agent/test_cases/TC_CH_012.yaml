@@ -1,0 +1,11 @@
+id: TC_CH_012
+title: Delete confirmation can be cancelled
+description: >
+  With at least one creative already existing in Content Hub, click
+  Delete on it, then click Cancel in the confirmation dialog. Verify a
+  "This action cannot be undone" warning is shown and the dialog closes
+  without deleting.
+preconditions:
+  - requires login
+  - "GAP: requires at least one real, already-uploaded test creative to exist in Content Hub to click Delete on — no test media assets are configured for this project; not currently available."
+suite: Content Hub Extended

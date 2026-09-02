@@ -1,0 +1,7 @@
+id: TC-N-09
+title: CUSTOM date outside flight range is disabled
+description: Add a Custom schedule and attempt to pick a date before or after the line item's flight range.
+  Verify out-of-range dates are greyed out and unselectable.
+preconditions:
+- requires login
+suite: Day Parting

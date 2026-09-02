@@ -1,0 +1,9 @@
+id: Ads_CH_01
+title: Upload video creative
+description: >
+  Navigate to Creatives, click Upload, select a video file, and upload it.
+  Verify the video file uploads successfully.
+preconditions:
+  - requires login
+  - "GAP: requires a real test video file (.mp4) to upload — no test media assets are configured for this project; not currently available"
+suite: Content Hub

@@ -1,0 +1,18 @@
+id: Ads_ND_LT_369
+title: Total line item budget exceeding deal budget (known bug)
+description: >
+  Open the Test Campaign (or create one with a defined total budget of
+  1000), add a Line Item with a budget of 1000, then add a second Line
+  Item also with a budget of 1000 (so the combined Line Item budgets
+  exceed the deal's total budget), then save the deal. Note: the
+  originally intended behavior was for the save to be blocked with a
+  validation error when combined Line Item budgets exceed the deal
+  budget, but the site currently allows the save to succeed without any
+  validation — a known, separately tracked bug. Treat "the deal saves
+  successfully despite the budget overage" as the current expected/pass
+  condition for this check, not a failure; the point of this test is to
+  catch if that behavior ever changes, not to re-fail an already-known
+  bug every run.
+preconditions:
+  - requires login
+suite: Line Item

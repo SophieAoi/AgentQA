@@ -1,0 +1,10 @@
+id: TC_CR_005
+title: File size validation — file exceeding limit rejected
+description: >
+  With a file size limit configured, attempt to upload a creative file
+  that exceeds the size limit. Verify the file is rejected with a
+  validation message.
+preconditions:
+  - requires login
+  - "GAP: requires a real creative asset file deliberately sized to exceed the configured upload limit — no oversized test fixture exists in this project. Source sheet marks this case Automated: No."
+suite: Creative Types

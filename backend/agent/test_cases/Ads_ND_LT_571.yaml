@@ -1,0 +1,13 @@
+id: Ads_ND_LT_571
+title: Resolution consistency between line item and creative not enforced (known bug)
+description: >
+  Create a line item with 1920x1080 resolution, then assign a creative
+  with a mismatched 1080x1920 resolution. Note: the originally intended
+  behavior was for the system to restrict mismatched resolution
+  assignment, but a creative with a different resolution is currently
+  allowed — a known, separately tracked bug (POD-02346, "Resolution
+  mismatch").
+preconditions:
+  - requires login
+  - "GAP: requires a real creative asset with a specific, known 1080x1920 resolution to assign — no such video/image test fixtures exist in this project. Source sheet marks this case Automated: Yes, but no such fixture is available here."
+suite: Creative Types

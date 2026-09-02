@@ -1,0 +1,9 @@
+id: TC_CR_003
+title: Audio creative upload (.mp3)
+description: >
+  With the user logged in, go to the creatives section and upload an
+  .mp3 audio file. Verify the audio uploads successfully.
+preconditions:
+  - requires login
+  - "GAP: requires a real audio creative asset to upload — no audio test fixtures exist in this project. Source sheet marks this case Automated: Yes, but no such fixture is available here."
+suite: Creative Types

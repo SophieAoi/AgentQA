@@ -1,0 +1,11 @@
+id: INF_DIR_03
+title: Create Direct campaign — missing Campaign Name
+description: >
+  Click "+ Create Campaign". Leave the Campaign Name field empty, but fill
+  every other field (Deal Type Direct, Client Type, Country, Total Budget,
+  Goal Type, Goal Value) with valid values, then click Create Campaign.
+  Verify a validation error is shown for the Campaign Name field and the
+  user stays on the form (the campaign is not created).
+preconditions:
+  - requires login
+suite: Campaign Creation

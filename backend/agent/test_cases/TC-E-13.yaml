@@ -1,0 +1,7 @@
+id: TC-E-13
+title: Save with 0 hours after Deselect All
+description: Add a Default schedule, click 'Deselect All', then click 'Save Schedule'. Verify the save
+  is blocked with the validation message 'Please select at least one hour'.
+preconditions:
+- requires login
+suite: Day Parting

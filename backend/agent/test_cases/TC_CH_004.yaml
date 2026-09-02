@@ -1,0 +1,11 @@
+id: TC_CH_004
+title: Rename a folder
+description: >
+  Create a folder with a unique name (include a timestamp so this doesn't
+  collide with previous runs), then use Folder options -> Rename and
+  submit a new name. Verify the folder list shows the new name, not the
+  old one.
+preconditions:
+  - requires login
+suite: Content Hub Extended
+essential: true

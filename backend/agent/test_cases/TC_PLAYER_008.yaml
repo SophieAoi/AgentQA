@@ -1,0 +1,9 @@
+id: TC_PLAYER_008
+title: Wrong creative type assignment blocked
+description: Create a line item with Creative Type = Video, then attempt to assign an image creative to
+  it. Verify the system prevents the assignment and shows a validation error.
+preconditions:
+- requires login
+- 'GAP: requires a real test creative/media asset file with specific properties (resolution/duration/format/type)
+  to upload — no test media assets are configured for this project; not currently available'
+suite: Player Testing

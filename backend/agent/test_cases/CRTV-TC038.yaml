@@ -1,0 +1,9 @@
+id: CRTV-TC038
+title: Creative exceeds maximum file size
+description: Upload a 15MB creative against a 10MB platform limit, assign it, and trigger an ad request.
+  Verify the player blocks the oversized creative (ad not served, upload rejection shown).
+preconditions:
+- requires login
+- 'GAP: requires a real test creative/media asset file with specific properties (resolution/duration/format/type)
+  to upload — no test media assets are configured for this project; not currently available'
+suite: Player Testing

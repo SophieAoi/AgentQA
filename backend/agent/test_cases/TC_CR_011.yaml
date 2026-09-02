@@ -1,0 +1,9 @@
+id: TC_CR_011
+title: Creative rotation logic with multiple assigned creatives
+description: >
+  Assign multiple creatives to an active campaign and monitor rotation.
+  Verify creatives rotate as per configuration.
+preconditions:
+  - requires login
+  - "GAP: requires multiple real creative assets already uploaded, plus observation of real ad delivery/rotation over time, which requires an actual ad-serving pipeline. Neither creative fixtures nor a delivery pipeline are available in this environment. Source sheet also marks this case Automated: Yes, but neither prerequisite is available here."
+suite: Creative Types

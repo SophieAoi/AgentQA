@@ -1,0 +1,14 @@
+id: Ads_DL_LT_08
+title: Pagination — Next Page (known bug, scoped narrowly)
+description: >
+  Navigate to the Deals List, where the total record count exceeds one
+  page. Click the Next Page button. Note: this is a known, tracked bug
+  (POD-02563) where pagination doesn't work correctly, but the source
+  sheet doesn't specify exactly what happens instead, so this test can't
+  honestly assert a specific (correct or incorrectly-matching) outcome
+  either way. Scope this check to only: the Next Page button can be
+  clicked without the page crashing or entering an error state — do not
+  assert whether the displayed records actually changed to a new page.
+preconditions:
+  - requires login
+suite: Deal Management

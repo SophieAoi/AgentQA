@@ -1,0 +1,8 @@
+id: TC-P-02
+title: Add WEEKEND when DEFAULT (All Days) exists
+description: With a line item that has Schedule 1 (Default, All Days), click the chevron and pick Weekend.
+  Verify a toast appears warning that Schedule 1 (Default) covers the same days, and Schedule 1's editor
+  opens instead of creating a new schedule.
+preconditions:
+- requires login
+suite: Day Parting

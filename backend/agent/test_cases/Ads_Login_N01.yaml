@@ -1,0 +1,9 @@
+id: Ads_Login_N01
+title: Login failure — unregistered email
+description: >
+  Navigate to {{INFLUENCE_BASE_URL}}. On the sign-in page, enter the
+  unregistered email "newuser_xyz@notfound.com" and any password (e.g.
+  "Test@123"), then click Sign In. Verify an "Invalid credentials" error is
+  shown and login fails.
+preconditions: []
+suite: Login

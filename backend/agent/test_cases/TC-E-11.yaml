@@ -1,0 +1,7 @@
+id: TC-E-11
+title: Select All then deselect one hour
+description: Add a Default schedule, select all hours, then deselect hour 14:00, and save. Verify the
+  summary updates correctly showing 23 hours with 14:00 excluded.
+preconditions:
+- requires login
+suite: Day Parting

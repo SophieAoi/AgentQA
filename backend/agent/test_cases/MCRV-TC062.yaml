@@ -1,0 +1,12 @@
+id: MCRV-TC062
+title: Only one valid format creative in rotation
+description: Assign Creative A (valid format) and Creative B (invalid format for the placement), then
+  trigger ad requests. Verify the player serves only the valid Creative A, silently excluding Creative
+  B.
+preconditions:
+- requires login
+- 'GAP: requires triggering a real ad request and observing whether/how an ad actually serves via the
+  real ad-delivery pipeline (dayparting/pacing/rotation/threshold enforcement etc.) — this is backend
+  ad-serving behavior, not something a browser clicking through the CMS admin UI can cause or verify;
+  needs a real or simulated ad-serving/player environment'
+suite: Player Testing

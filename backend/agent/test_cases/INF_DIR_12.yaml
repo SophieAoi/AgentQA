@@ -1,0 +1,10 @@
+id: INF_DIR_12
+title: Currency auto-set based on selected Country
+description: >
+  Click "+ Create Campaign", select Direct as the deal type, then select
+  Country = Japan. Verify the Currency field auto-populates to JPY and
+  displays a "From Country" tag indicating it's read-only/derived from the
+  country selection.
+preconditions:
+  - requires login
+suite: Campaign Creation

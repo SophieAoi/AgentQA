@@ -1,0 +1,12 @@
+id: Ads_ND_LT_34
+title: Schedule resets when flight dates are changed
+description: >
+  Open the Test Campaign, start a new or edit an existing Line Item, and
+  select an initial set of flight dates. Verify a schedule is generated in
+  the Scheduling section. Then change the flight dates to a different
+  range and check the Scheduling section again. Verify the schedule
+  resets and reflects the new dates, and that a warning message is shown
+  about the schedule being reset.
+preconditions:
+  - requires login
+suite: Line Item

@@ -1,0 +1,10 @@
+id: RATE-TC018
+title: Flat rate deal — fixed CPM regardless of auction
+description: Configure a flat rate deal at $10 CPM, submit an ad request, and observe the CPM applied.
+  Verify the ad serves at a flat $10 CPM with no auction deduction and plays correctly.
+preconditions:
+- requires login
+- 'GAP: requires a real DSP/SSP bidding integration (RTB auction mechanics, bid submission, rate sync)
+  — this project has no configured demand-side/supply-side ad-tech integration to exercise; not currently
+  available'
+suite: Player Testing

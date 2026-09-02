@@ -1,0 +1,15 @@
+id: Ads_NC_01
+title: Verify Campaign Name mandatory validation
+description: >
+  Click "Campaigns" in the main navigation, then click "New Campaign"
+  (confirmed live: this is the real button label for opening the
+  create-campaign form — "Create Campaign" is only the label of the
+  submit button inside that form, not something you navigate to or
+  click first). Leave the Campaign Name field blank, then click "Create
+  Campaign" to submit. Verify the exact validation message "Campaign
+  name must be at least 3 characters" appears and the campaign is not
+  created — this is the real message shown live; do not expect generic
+  wording like "Enter campaign name," it does not exist on this form.
+preconditions:
+  - requires login
+suite: Campaign Creation

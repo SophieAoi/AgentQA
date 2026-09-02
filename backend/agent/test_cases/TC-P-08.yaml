@@ -1,0 +1,8 @@
+id: TC-P-08
+title: Validity auto-set (non-CUSTOM)
+description: 'Add a Weekday schedule and observe the Schedule Date field in the editor. Verify a read-only
+  label shows ''Active for entire campaign: <start date> - <end date>'' matching the line item''s flight
+  dates, with no date-range picker shown, and the same behavior for Default and Weekend schedule types.'
+preconditions:
+- requires login
+suite: Day Parting

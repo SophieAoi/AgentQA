@@ -1,0 +1,11 @@
+id: MCRV-TC056
+title: Two creatives — weighted rotation 70/30
+description: Assign two creatives with 70/30 rotation weight, serve 100 plays, and count the distribution.
+  Verify the first creative plays approximately 70 times, matching the configured weights.
+preconditions:
+- requires login
+- 'GAP: requires triggering a real ad request and observing whether/how an ad actually serves via the
+  real ad-delivery pipeline (dayparting/pacing/rotation/threshold enforcement etc.) — this is backend
+  ad-serving behavior, not something a browser clicking through the CMS admin UI can cause or verify;
+  needs a real or simulated ad-serving/player environment'
+suite: Player Testing

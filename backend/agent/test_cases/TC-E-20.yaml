@@ -1,0 +1,7 @@
+id: TC-E-20
+title: Delete all schedules — save line item
+description: Add and save a schedule, delete it, then click 'Save Changes' on the line item. Verify the
+  line item save is blocked or a warning is shown indicating no schedules are configured.
+preconditions:
+- requires login
+suite: Day Parting

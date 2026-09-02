@@ -1,0 +1,9 @@
+id: TC_CH_010
+title: Open and close Filter Creatives panel
+description: >
+  On the Content Hub page with the creative list visible, click Filters,
+  inspect the panel, then click Close. Verify All Statuses/Types/Folders
+  and Clear All/Apply Filters are shown, then the panel closes.
+preconditions:
+  - requires login
+suite: Content Hub Extended

@@ -1,0 +1,10 @@
+id: TC-N-06
+title: Three DEFAULT All Days (incremental merge)
+description: Add a Default schedule with hours 06:00-08:00 and save (creating Schedule 1). Add Default
+  again, get redirected to Schedule 1, add hours 12:00-14:00, and save (merged). Add Default a third time,
+  get redirected again, add hours 18:00-20:00, and save (merged). Verify each attempt redirects to Schedule
+  1, the final schedule shows all three windows (06:00-08:00, 12:00-14:00, 18:00-20:00), and only one
+  schedule exists in the list throughout.
+preconditions:
+- requires login
+suite: Day Parting

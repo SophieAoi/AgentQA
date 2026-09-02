@@ -1,0 +1,16 @@
+id: Ads_ND_LT_308
+title: Recommended inventory shows only available items
+description: >
+  Open a Line Item's inventory recommendation screen, set targeting
+  criteria and dates, and fetch recommended inventory. Read the resulting
+  recommendations list once and verify no item is visibly marked or
+  tagged as unavailable. (Scoped to what a single read of the
+  recommendations list can confirm — this does not drill into every
+  individual item's own detail/availability page. The source sheet marks
+  this case "Automated: No", possibly because full per-item verification
+  is more involved than a single-page check; this test covers the
+  list-level signal, not an exhaustive per-item audit.)
+preconditions:
+  - requires login
+suite: Inventory
+essential: true

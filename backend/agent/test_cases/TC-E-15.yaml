@@ -1,0 +1,7 @@
+id: TC-E-15
+title: Spots/loop very large number
+description: Add a Default schedule, set Spots/loop to 9999, and save. Verify the system either shows
+  a warning or applies a cap, handling the large value gracefully.
+preconditions:
+- requires login
+suite: Day Parting

@@ -1,0 +1,9 @@
+id: Ads_CH_07
+title: Upload video inside a specific folder
+description: >
+  Navigate to Creatives, open a specific folder, click Upload, and select
+  a video file. Verify the video is uploaded into that folder.
+preconditions:
+  - requires login
+  - "GAP: requires a real test video file to upload — no test media assets are configured for this project; not currently available"
+suite: Content Hub

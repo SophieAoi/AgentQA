@@ -1,0 +1,10 @@
+id: Ads_ND_LT_293
+title: Mandatory validation for Creative Type
+description: >
+  Open the Test Campaign, start a new Line Item, and navigate to the
+  Creative section. Leave Creative Type unselected, fill every other
+  required field with valid values, then click Save. Verify a validation
+  error is shown and the Line Item is not created without a Creative Type.
+preconditions:
+  - requires login
+suite: Line Item

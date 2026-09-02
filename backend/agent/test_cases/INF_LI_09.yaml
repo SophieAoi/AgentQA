@@ -1,0 +1,9 @@
+id: INF_LI_09
+title: Unlimited Budget toggle
+description: >
+  Open the Test Campaign, open the New Line Item form, and scroll to
+  Budget Options. Toggle "Unlimited Budget" ON. Verify the Budget field
+  becomes disabled, indicating the Line Item has no budget cap.
+preconditions:
+  - requires login
+suite: Line Item

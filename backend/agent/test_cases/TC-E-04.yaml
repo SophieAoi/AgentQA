@@ -1,0 +1,7 @@
+id: TC-E-04
+title: Weekend + Custom on Saturday
+description: Add a Weekend schedule, then add a Custom schedule and pick Saturday. Verify a conflict is
+  raised because Saturday is already covered by the Weekend schedule.
+preconditions:
+- requires login
+suite: Day Parting

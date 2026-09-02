@@ -1,0 +1,18 @@
+id: AD_LG_04
+title: Login with valid email & valid password
+description: >
+  Navigate to {{INFLUENCE_BASE_URL}}. On the login page, fill the Email
+  field with {{VALID_EMAIL}} and the Password field with
+  {{VALID_PASSWORD}}, then click Sign In. The pass condition is that the
+  user is redirected to the Dashboard — judge this by the page CONTENT
+  (e.g. headings/cards like "Active Line Items", "Pending Approvals",
+  "Completed Campaigns"), not by the URL path. Confirmed live: the real
+  post-login URL is just the base URL itself with no "/dashboard"
+  segment — do not fail this step for the URL not containing
+  "/dashboard"; that is expected and correct, not a sign the redirect
+  failed. This one check (Dashboard content is visible) is the only
+  thing that needs verifying — do not add a separate step to look for a
+  success toast/banner; it isn't part of the pass condition.
+preconditions: []
+suite: Login
+essential: true

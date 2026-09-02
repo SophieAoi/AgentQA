@@ -1,0 +1,10 @@
+id: CRTV-TC036
+title: Creative with wrong aspect ratio for placement
+description: Upload a 16:9 creative, set the placement to 4:3, and trigger an ad request. Verify the player
+  rejects the mismatched creative (fallback or blank served, no distorted render).
+preconditions:
+- requires login
+- 'GAP: requires both a real test creative/media asset AND observing an actual physical player''s real-time
+  playback/rendering behavior — no test media assets are configured for this project, and real player
+  observation is outside what browser-driving UI automation can verify; not currently available'
+suite: Player Testing

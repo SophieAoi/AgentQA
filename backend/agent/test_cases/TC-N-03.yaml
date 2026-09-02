@@ -1,0 +1,8 @@
+id: TC-N-03
+title: Add WEEKDAY when WEEKDAY already exists
+description: With Schedule 1 (Weekday, Mon-Fri) already existing, add a Weekday schedule again. Verify
+  a toast explains Schedule 1 (Weekday) already covers the same days and opens it, and no duplicate schedule
+  is created.
+preconditions:
+- requires login
+suite: Day Parting

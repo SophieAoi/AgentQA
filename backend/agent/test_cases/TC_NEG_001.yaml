@@ -1,0 +1,13 @@
+id: TC_NEG_001
+title: Create deal — Deal Name blank
+description: >
+  On the Create Deal page, leave the Deal Name field blank, then click
+  Create. Verify an error such as "Deal Name required" is displayed and
+  the deal is not created. (The source sheet marks this case "Automated:
+  No", but it has no apparent missing fixture or capability gap — it's a
+  standard blank-field validation check, the same shape as several other
+  automated cases in this suite, so it's included here rather than
+  deferred.)
+preconditions:
+  - requires login
+suite: Deal Management

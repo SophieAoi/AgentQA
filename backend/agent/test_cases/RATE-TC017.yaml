@@ -1,0 +1,10 @@
+id: RATE-TC017
+title: CPM deal — buyer bids below floor
+description: Set a CPM floor of $5, have the DSP submit a bid of $3, and observe the outcome. Verify the
+  bid is rejected and the slot is passed to the next demand source (no ad play).
+preconditions:
+- requires login
+- 'GAP: requires a real DSP/SSP bidding integration (RTB auction mechanics, bid submission, rate sync)
+  — this project has no configured demand-side/supply-side ad-tech integration to exercise; not currently
+  available'
+suite: Player Testing

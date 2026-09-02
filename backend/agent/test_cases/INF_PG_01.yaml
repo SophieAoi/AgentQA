@@ -1,0 +1,19 @@
+id: INF_PG_01
+title: Create Programmatic Guaranteed campaign
+description: >
+  On the Campaigns page, click "New Campaign". Enter a unique Campaign
+  Name (include a timestamp or random suffix so repeated runs never
+  collide). In the Deal Type dropdown, select "Guaranteed" (this is the
+  Programmatic Guaranteed deal type — it replaces the whole "Programmatic
+  / Programmatic Type" selection this test used to describe). Select a
+  Brand, a DSP (e.g. theTradeDesk), a Buyer, and a Transaction Type — all
+  from whatever real options are offered; the specific choice doesn't
+  matter for this test. Leave Goal Type as "None" (there is no separate
+  "Goal Value" field on the real form). Select a Currency and enter a
+  Budget, then click "Create Campaign". Verify the campaign is created
+  successfully (no validation errors block submission) and the app
+  navigates away from the create-campaign form.
+preconditions:
+  - requires login
+suite: Campaign Creation
+essential: true

@@ -1,0 +1,7 @@
+id: TC-E-01
+title: Default + Weekday + Weekend all three exist
+description: Add a Default schedule (All Days), then add a Weekday schedule, then add a Weekend schedule.
+  Verify a conflict is detected for all three overlapping schedules.
+preconditions:
+- requires login
+suite: Day Parting

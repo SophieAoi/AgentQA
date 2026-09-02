@@ -1,0 +1,10 @@
+id: CRTV-TC041
+title: Creative with companion banner — both assets present
+description: Upload a main creative and a companion banner, both approved, and trigger an ad request.
+  Verify both render in sync and the player fires on the primary impression.
+preconditions:
+- requires login
+- 'GAP: requires both a real test creative/media asset AND observing an actual physical player''s real-time
+  playback/rendering behavior — no test media assets are configured for this project, and real player
+  observation is outside what browser-driving UI automation can verify; not currently available'
+suite: Player Testing

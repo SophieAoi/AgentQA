@@ -1,0 +1,7 @@
+id: TC-P-10
+title: DEFAULT with subset of days — correct label
+description: Add a Default schedule, deselect all days except Tuesday, and save. Verify the schedule list
+  shows 'Tue' (not 'All Days').
+preconditions:
+- requires login
+suite: Day Parting

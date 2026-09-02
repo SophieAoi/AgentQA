@@ -1,0 +1,14 @@
+id: Ads_Login_N04
+title: Email format validation (invalid format)
+description: >
+  Navigate to {{INFLUENCE_BASE_URL}}. On the sign-in page, enter an
+  invalid-format email such as "invalid_email.com" into the Email field
+  and any password into the Password field, then click Sign In. Confirmed
+  live: this app does NOT validate email format client-side — the field
+  is really "Email / Username" and accepts any text; an invalid-format
+  value is simply sent as a login attempt and rejected the same way any
+  wrong credential would be. Verify the text "Invalid credentials" is
+  shown — do not expect a format-specific message like "Please enter a
+  valid email address"; no such message exists on this form.
+preconditions: []
+suite: Login

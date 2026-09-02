@@ -1,0 +1,10 @@
+id: TC_CR_004
+title: Unsupported file format rejected (.exe)
+description: >
+  Go to the creatives section and attempt to upload a file with an
+  unsupported format (.exe). Verify the system rejects the file with an
+  error message.
+preconditions:
+  - requires login
+suite: Creative Types
+essential: true

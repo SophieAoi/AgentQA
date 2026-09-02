@@ -1,0 +1,15 @@
+id: Ads_ND_LT_374
+title: Inventory with multiple panels reflects correct screen count (known bug)
+description: >
+  Find an existing inventory item configured with 2 panels (if none is
+  obviously labeled as such, use the closest-matching multi-panel
+  inventory you can locate), search for it in the DOOH recommendation
+  screen, and click view details. Note: the originally intended behavior
+  was for the system to display the correct screen count (2 screens for a
+  2-panel inventory), but it currently displays only 1 screen — a known,
+  separately tracked bug (POD-02411). Treat "only 1 screen is displayed
+  despite the inventory having multiple panels" as the current
+  expected/pass condition for this check, not a failure.
+preconditions:
+  - requires login
+suite: Inventory

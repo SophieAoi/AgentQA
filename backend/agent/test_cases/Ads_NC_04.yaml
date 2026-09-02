@@ -1,0 +1,12 @@
+id: Ads_NC_04
+title: Country selection updates Market Insights panel
+description: >
+  Navigate to Create Campaign and select Country = Japan. Verify the
+  Market Insights panel updates to show a population figure of
+  approximately 125M for Japan. Note: this agent reads page text/DOM
+  state, not rendered visuals, so it cannot verify that the map itself
+  visually zooms to Japan — only that the panel's text content (population
+  figure) actually refreshes to match the selected country.
+preconditions:
+  - requires login
+suite: Campaign Creation

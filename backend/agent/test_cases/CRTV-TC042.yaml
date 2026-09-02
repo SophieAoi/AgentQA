@@ -1,0 +1,11 @@
+id: CRTV-TC042
+title: Approved creative — serves without review delay
+description: Set a creative to Approved status, trigger an ad request immediately, and observe the serving
+  speed. Verify the player serves immediately with no hold or pending delay.
+preconditions:
+- requires login
+- 'GAP: requires triggering a real ad request and observing whether/how an ad actually serves via the
+  real ad-delivery pipeline (dayparting/pacing/rotation/threshold enforcement etc.) — this is backend
+  ad-serving behavior, not something a browser clicking through the CMS admin UI can cause or verify;
+  needs a real or simulated ad-serving/player environment'
+suite: Player Testing

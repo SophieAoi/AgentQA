@@ -1,0 +1,10 @@
+id: RATE-TC022
+title: Daily spend cap hit mid-day
+description: Set a $100 daily cap, run impressions until the cap is hit, then submit a new request after
+  the cap. Verify the player stops serving on hitting the cap (no overspend, ad does not play).
+preconditions:
+- requires login
+- 'GAP: requires a real DSP/SSP bidding integration (RTB auction mechanics, bid submission, rate sync)
+  — this project has no configured demand-side/supply-side ad-tech integration to exercise; not currently
+  available'
+suite: Player Testing

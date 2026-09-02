@@ -1,0 +1,9 @@
+id: Ads_ND_LT_273
+title: Budget field rejects zero value
+description: >
+  On the Deal creation page, enter 0 into the Budget field, then Save.
+  Verify a validation error such as "Budget must be greater than 0" is
+  shown.
+preconditions:
+  - requires login
+suite: Deal Management

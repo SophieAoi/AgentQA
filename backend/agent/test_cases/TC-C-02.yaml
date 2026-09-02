@@ -1,0 +1,9 @@
+id: TC-C-02
+title: Weekday 2 spots + Weekend 1 spot (correct pattern)
+description: 'Delete the Default schedule, add a Weekday schedule with hours 08:00-20:00 and Spots/loop=2,
+  save, then add a Weekend schedule with hours 08:00-20:00 and Spots/loop=1, save. Verify no conflict
+  occurs (different day sets) and two schedules exist: Schedule 1 (Weekday, 2 spots), Schedule 2 (Weekend,
+  1 spot).'
+preconditions:
+- requires login
+suite: Day Parting

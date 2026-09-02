@@ -1,0 +1,11 @@
+id: THRS-TC043
+title: Daily threshold — ad serves within 200/day cap
+description: Configure a daily threshold of 200 ad plays, serve until 199 plays, then trigger one more
+  request and observe play 200. Verify the 200th play serves correctly (threshold not yet breached).
+preconditions:
+- requires login
+- 'GAP: requires triggering a real ad request and observing whether/how an ad actually serves via the
+  real ad-delivery pipeline (dayparting/pacing/rotation/threshold enforcement etc.) — this is backend
+  ad-serving behavior, not something a browser clicking through the CMS admin UI can cause or verify;
+  needs a real or simulated ad-serving/player environment'
+suite: Player Testing

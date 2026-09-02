@@ -1,0 +1,10 @@
+id: Ads_DL_LT_01
+title: Deal list page labels display correctly
+description: >
+  Click "Deals" from the sidebar. Verify all deal-related labels and
+  descriptions are shown with proper, human-readable text — no raw
+  translation-key placeholders (e.g. Tolgee keys) should be visible
+  anywhere on the page.
+preconditions:
+  - requires login
+suite: Deal Management

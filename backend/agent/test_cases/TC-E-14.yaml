@@ -1,0 +1,7 @@
+id: TC-E-14
+title: Spots/loop = 0
+description: Add a Default schedule, set Spots/loop to 0, and save. Verify the save is blocked with a
+  validation error shown for the invalid Spots/loop value.
+preconditions:
+- requires login
+suite: Day Parting

@@ -1,0 +1,9 @@
+id: TC_PLAYER_002
+title: Invalid duration creative upload rejected
+description: Create a line item, then attempt to upload a creative whose duration exceeds the allowed
+  limit and save. Verify the creative is rejected with a duration validation message.
+preconditions:
+- requires login
+- 'GAP: requires a real test creative/media asset file with specific properties (resolution/duration/format/type)
+  to upload — no test media assets are configured for this project; not currently available'
+suite: Player Testing

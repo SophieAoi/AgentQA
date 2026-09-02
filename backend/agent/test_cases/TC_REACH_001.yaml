@@ -1,0 +1,9 @@
+id: TC_REACH_001
+title: Reach metric reflects unique device count for a delivered campaign
+description: >
+  Run a campaign to completion across multiple devices and verify the
+  reach metric reflects the correct unique device count.
+preconditions:
+  - requires login
+  - "GAP: requires running a real campaign across multiple real devices and monitoring actual ad-serving reach numbers — no ad-serving/delivery pipeline is available to observe in this environment. Source sheet also marks this case Automated: No."
+suite: Planner

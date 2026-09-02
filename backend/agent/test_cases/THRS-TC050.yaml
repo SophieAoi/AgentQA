@@ -1,0 +1,12 @@
+id: THRS-TC050
+title: Frequency threshold — user exceeds cap
+description: With the same 3/day frequency cap, have a user receive 3 plays, then submit a 4th request
+  from the same user. Verify the 4th play is suppressed for the capped user and the slot is released to
+  the next eligible user.
+preconditions:
+- requires login
+- 'GAP: requires triggering a real ad request and observing whether/how an ad actually serves via the
+  real ad-delivery pipeline (dayparting/pacing/rotation/threshold enforcement etc.) — this is backend
+  ad-serving behavior, not something a browser clicking through the CMS admin UI can cause or verify;
+  needs a real or simulated ad-serving/player environment'
+suite: Player Testing

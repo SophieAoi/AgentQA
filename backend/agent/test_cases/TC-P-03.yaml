@@ -1,0 +1,9 @@
+id: TC-P-03
+title: Weekday + Weekend (no Default) — no conflict
+description: 'Delete the auto-created Default schedule, add a Weekday schedule (Mon-Fri locked, hours
+  09:00-18:00) and save, then add a Weekend schedule (Sat-Sun locked, hours 10:00-20:00) and save. Verify
+  no toast/conflict appears on the second save, and two schedules exist with days locked in each editor:
+  Schedule 1 (Weekday) Mon-Fri, Schedule 2 (Weekend) Sat-Sun.'
+preconditions:
+- requires login
+suite: Day Parting

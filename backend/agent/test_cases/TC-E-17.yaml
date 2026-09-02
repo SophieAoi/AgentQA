@@ -1,0 +1,7 @@
+id: TC-E-17
+title: Open editor — do nothing — Save
+description: Add a Default schedule, and immediately click Save without selecting any hours. Verify the
+  save is blocked with a validation message shown.
+preconditions:
+- requires login
+suite: Day Parting

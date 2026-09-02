@@ -1,0 +1,26 @@
+id: Ads_Login_UI01
+title: Verify overall UI and visual elements on login page
+description: >
+  Navigate to {{INFLUENCE_BASE_URL}}. On the sign-in page, verify the
+  following elements are present. Judge every item below purely by
+  whether it exists somewhere in the page state — never by its
+  on-screen position (a "directly above," "at the top," etc. claim
+  cannot be verified from a text-only page snapshot, so this test
+  never asks you to check position, only existence): a "moving walls"
+  logo image; a "Welcome Back" heading (the page also has a separate
+  marketing-hero heading, "Control Your OOH Advertising in One
+  Platform" — that is expected and correct, not a sign something is
+  wrong; do not fail this check because more than one heading exists on
+  the page — only check that "Welcome Back" specifically is one of
+  them. There is no separate "Sign In" header anywhere; "Sign In" only
+  appears as the button label); the subtext "Access your global OOH
+  campaign management platform"; an "Email / Username" field; a
+  "Password" field with a show/hide eye icon; a "Remember me" checkbox;
+  a "Forgot password?" link; and a "Sign In" button. Also verify the
+  page title is "MW Account | Moving Walls" (not "Sign In") and a
+  language selector button labeled "English" is present — judge this
+  purely by whether that button exists in the page state; do not try to
+  reason about whether it's a "default" versus some other selected
+  state, since a single snapshot can't demonstrate that either way.
+preconditions: []
+suite: Login

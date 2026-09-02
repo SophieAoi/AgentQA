@@ -1,0 +1,11 @@
+id: TC_DOOH_013
+title: Delivery report — Programmatic Guaranteed, single creative
+description: >
+  Create a Programmatic Guaranteed campaign, add a single inventory item
+  mapped with a device ID, assign a creative, activate, and check the
+  delivery report. Verify the campaign activates, the creative plays, and
+  the report reflects an accurate impression count.
+preconditions:
+  - requires login
+  - "GAP: requires a real physical DOOH player device that actually plays the creative and reports back — this is outside what any browser-driving UI automation tool can cause or verify, regardless of test fixtures; needs real signage hardware/infrastructure integration. Source sheet also marks this case Automated: No."
+suite: Delivery Reports

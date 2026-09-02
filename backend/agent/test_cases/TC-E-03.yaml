@@ -1,0 +1,7 @@
+id: TC-E-03
+title: Two Default subsets covering all 7 days
+description: Add a Default schedule selecting Mon/Tue/Wed, then add another Default schedule selecting
+  Thu/Fri/Sat/Sun. Verify a conflict is raised because the combined days cover all 7 days.
+preconditions:
+- requires login
+suite: Day Parting

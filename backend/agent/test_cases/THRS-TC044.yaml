@@ -1,0 +1,11 @@
+id: THRS-TC044
+title: Daily threshold — ad suppressed after 200 plays
+description: With the same 200/day threshold, serve 200 plays, then trigger the 201st request. Verify
+  the 201st play is suppressed and the player stops serving for the remainder of the day.
+preconditions:
+- requires login
+- 'GAP: requires triggering a real ad request and observing whether/how an ad actually serves via the
+  real ad-delivery pipeline (dayparting/pacing/rotation/threshold enforcement etc.) — this is backend
+  ad-serving behavior, not something a browser clicking through the CMS admin UI can cause or verify;
+  needs a real or simulated ad-serving/player environment'
+suite: Player Testing

@@ -1,0 +1,11 @@
+id: RATE-TC020
+title: Rate mismatch between DSP and SSP post-deal update
+description: Update the rate on the SSP only, then have the DSP submit a bid at the old rate, and observe
+  discrepancy handling. Verify the discrepancy is detected and the ad is not served until the rate conflict
+  is resolved.
+preconditions:
+- requires login
+- 'GAP: requires a real DSP/SSP bidding integration (RTB auction mechanics, bid submission, rate sync)
+  — this project has no configured demand-side/supply-side ad-tech integration to exercise; not currently
+  available'
+suite: Player Testing

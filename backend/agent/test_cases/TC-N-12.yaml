@@ -1,0 +1,12 @@
+id: TC-N-12
+title: Existing line item with duplicate-day schedules shows info banner
+description: Open the line item detail page for a line item that already has 3 Custom schedule rules on
+  the same date. Verify a blue info banner reads 'This line item has multiple schedules for the same days.
+  New line items will suggest merging same-day schedules automatically.' and that no data is changed by
+  the read-only banner.
+preconditions:
+- requires login
+- "GAP: requires a specific pre-existing line item (GD-I-00000-00994) with 3 Custom rules on the same
+  date already configured; if this fixture line item does not exist in the current environment, an
+  equivalent line item must be constructed first."
+suite: Day Parting

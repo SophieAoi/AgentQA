@@ -1,0 +1,7 @@
+id: TC-E-02
+title: Edit Weekday to manually select Sat/Sun
+description: Add a Weekday schedule, open its editor, and try selecting Sat or Sun. Verify Sat and Sun
+  remain locked/disabled and the day lock cannot be bypassed via edit.
+preconditions:
+- requires login
+suite: Day Parting

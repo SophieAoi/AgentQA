@@ -1,0 +1,16 @@
+id: Ads_Login_N03
+title: Login with empty fields — mandatory field validation
+description: >
+  Navigate to {{INFLUENCE_BASE_URL}}. On the sign-in page, leave the Email
+  and Password fields blank, then click Sign In. Confirmed live: this form
+  validates one blank field at a time, top to bottom — with both fields
+  blank, clicking Sign In immediately shows the text "Email / Username is
+  required" right below the Email field; no separate Password message
+  appears at the same time (it only appears in a later, different state:
+  once Email is filled in and Password is still blank — do not check for
+  it here). Verify that the exact text "Email / Username is required" is
+  present on the page — that alone is sufficient proof both that inline
+  validation fired and that the login was blocked; there is no separate
+  "login was blocked" signal to look for beyond this text being present.
+preconditions: []
+suite: Login

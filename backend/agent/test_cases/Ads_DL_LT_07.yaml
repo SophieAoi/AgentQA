@@ -1,0 +1,15 @@
+id: Ads_DL_LT_07
+title: Column sorting — Highest to Lowest (known bug, scoped narrowly)
+description: >
+  Navigate to the Deals List. Click a sortable column header to sort
+  Highest to Lowest. Note: this is a known, tracked bug (POD-02563) where
+  sorting doesn't organize data correctly, but the source sheet doesn't
+  specify exactly what the wrong order looks like, so this test can't
+  honestly assert a specific (correct or incorrectly-matching) sort order
+  either way. Scope this check to only: the sort control can be clicked,
+  and the list still renders with data afterward (no crash, no error
+  state, no empty list) — do not assert anything about whether the
+  resulting order is actually correct.
+preconditions:
+  - requires login
+suite: Deal Management

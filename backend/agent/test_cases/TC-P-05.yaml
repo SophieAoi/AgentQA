@@ -1,0 +1,9 @@
+id: TC-P-05
+title: Same hours, different Spots/loop via editor
+description: Add a Default schedule with hours 08:00-10:00 and Spots/loop=2, save, then add Default again
+  — verify a toast fires and Schedule 1's editor opens. Also select 18:00-20:00 (multi-window), keep Spots/loop=2,
+  and save. Verify Schedule 1 has both windows (08:00-10:00 and 18:00-20:00) with Spots/loop=2, and the
+  summary shows 2 time windows.
+preconditions:
+- requires login
+suite: Day Parting

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head><title>Fixture Login</title></head>
+<body>
+  <h1>Welcome Back</h1>
+  <form id="login-form">
+    <label>Email / Username
+      <input type="text" placeholder="Ex : you@company.com" id="email" />
+    </label>
+    <label>Password
+      <input type="password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;" id="password" />
+    </label>
+    <button type="submit">Sign In</button>
+  </form>
+  <script>
+    // Mimics the real site's OAuth-redirect-on-success behavior. Only this
+    // exact fixture credential pair redirects — anything else (e.g. blank,
+    // to simulate a wrong-password scenario) just sits on this page, which
+    // is what a real wait_for_url timeout looks like.
+    document.getElementById("login-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      if (email === "fixture@example.com" && password === "fixture-pass") {
+        const params = new URLSearchParams(window.location.search);
+        window.location.href = params.get("success_redirect") || "/dashboard.html";
+      }
+    });
+  </script>
+</body>
+</html>

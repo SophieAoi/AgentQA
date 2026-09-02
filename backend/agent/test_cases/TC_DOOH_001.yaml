@@ -1,0 +1,9 @@
+id: TC_DOOH_001
+title: DOOH campaign creation with video creative upload
+description: >
+  Create a DOOH campaign and upload a video creative asset, then verify
+  the creative is accepted and attached to the campaign.
+preconditions:
+  - requires login
+  - "GAP: requires a real video creative asset to upload — no video test fixtures exist in this project. Source sheet also marks this case Automated: No."
+suite: Planner

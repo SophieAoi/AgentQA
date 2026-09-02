@@ -1,0 +1,9 @@
+id: TC_IMP_001
+title: Impression count matches expected delivery for a completed campaign
+description: >
+  Run a campaign to completion and verify the recorded impression count
+  matches the expected delivery based on spots and duration.
+preconditions:
+  - requires login
+  - "GAP: requires running a real campaign and monitoring actual ad-serving impression numbers over its full delivery window — no ad-serving/delivery pipeline is available to observe in this environment. Source sheet also marks this case Automated: No."
+suite: Planner

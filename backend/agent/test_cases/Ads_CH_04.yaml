@@ -1,0 +1,12 @@
+id: Ads_CH_04
+title: Video < 5 seconds should NOT be uploaded (known bug)
+description: >
+  Navigate to Creatives, click Upload, select a video shorter than 5
+  seconds, and upload it. Note: the originally intended behavior was for
+  the system to reject videos shorter than 5 seconds, but it currently
+  allows them — a known, separately tracked bug. Treat "the short video
+  uploads successfully" as the current expected/pass condition.
+preconditions:
+  - requires login
+  - "GAP: requires a real test video file shorter than 5 seconds — no test media assets are configured for this project; not currently available. Source sheet also marks this case Automated: No."
+suite: Content Hub

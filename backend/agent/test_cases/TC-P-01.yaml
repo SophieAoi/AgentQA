@@ -1,0 +1,10 @@
+id: TC-P-01
+title: Add DEFAULT + WEEKDAY (different effective days)
+description: 'Create a line item, add a Default schedule with hours 08:00-10:00 and save, then use the
+  chevron to pick Weekday. Verify the Weekday editor opens with Mon-Fri locked and Sat-Sun greyed out,
+  no toast/warning appears, and two separate schedules exist: Schedule 1 (Default) All Days, Schedule
+  2 (Weekday) Mon-Fri.'
+preconditions:
+- requires login
+suite: Day Parting
+essential: true

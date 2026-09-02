@@ -1,0 +1,11 @@
+id: Ads_NC_05
+title: Total Budget field — numeric validation
+description: >
+  Navigate to Create Campaign and attempt to enter the non-numeric text
+  "abc" into the Total Budget field. Verify the field either rejects the
+  non-numeric input outright (the characters never appear in the field)
+  or, if entered, shows a validation error when the form is submitted —
+  either way, the campaign must not accept "abc" as a valid budget value.
+preconditions:
+  - requires login
+suite: Campaign Creation

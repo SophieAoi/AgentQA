@@ -1,0 +1,12 @@
+id: TC_DOOH_015
+title: Delivery report — PG, single creative, multiple line items
+description: >
+  Create a Programmatic Guaranteed campaign with multiple line items, each
+  with a single inventory item mapped with a device ID, and assign a
+  creative per line item. Activate and check the delivery report. Verify
+  all line items activate, creatives play, and the report shows counts
+  per line item.
+preconditions:
+  - requires login
+  - "GAP: requires real physical DOOH player devices that actually play each line item's creative and report back — this is outside what any browser-driving UI automation tool can cause or verify, regardless of test fixtures; needs real signage hardware/infrastructure integration. Source sheet also marks this case Automated: No."
+suite: Delivery Reports

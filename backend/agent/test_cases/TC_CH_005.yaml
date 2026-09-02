@@ -1,0 +1,10 @@
+id: TC_CH_005
+title: Open Upload Creatives panel
+description: >
+  On the Content Hub page, click Upload Creatives and inspect the panel
+  before choosing a file. Verify the Browse Files button and Creative
+  Specifications are shown, and the Upload button is disabled until a
+  file is chosen.
+preconditions:
+  - requires login
+suite: Content Hub Extended

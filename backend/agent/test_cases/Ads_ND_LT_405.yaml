@@ -1,0 +1,16 @@
+id: Ads_ND_LT_405
+title: Total impressions displayed after activating direct deal (known bug)
+description: >
+  Create a direct deal with valid inventory (or use an existing one), then
+  activate it. Check the Total Impressions figure displayed on the deal.
+  Note: the originally intended behavior was for total impressions to be
+  calculated and displayed correctly, but the site currently always shows
+  0 right after activation — a known, separately tracked bug
+  (POD-02633). Treat "total impressions displays as 0" as the current
+  expected/pass condition for this check, not a failure; this only checks
+  the number shown in the UI immediately after activation, not any real
+  ad-delivery/play event.
+preconditions:
+  - requires login
+suite: Delivery Reports
+essential: true

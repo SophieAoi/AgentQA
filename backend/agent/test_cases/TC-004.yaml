@@ -1,0 +1,11 @@
+id: TC-004
+title: Duplicate Line Item name is rejected
+description: >
+  Log in, open a new Line Item form under the same campaign, reuse the exact
+  Line Item Name from TC-001 ("QA Test Deal 001"), fill the rest of the form
+  with otherwise-valid values, and attempt to save. Checks whether the app
+  rejects a duplicate name within the same campaign.
+preconditions:
+  - requires login
+  - "TC-001 should run first so a Line Item with this name already exists"
+suite: Line Item

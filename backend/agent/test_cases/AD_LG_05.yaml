@@ -1,0 +1,21 @@
+id: AD_LG_05
+title: Empty username and password — mandatory field check
+description: >
+  Navigate to {{INFLUENCE_BASE_URL}}. On the login page, leave the Email
+  and Password fields blank, then click Sign In. Confirmed live: this
+  form validates one blank field at a time, top to bottom — with both
+  fields blank, clicking Sign In immediately (synchronously, no page
+  navigation or delay) shows the text "Email / Username is required"
+  right below the Email field; no separate Password-field message
+  appears at the same time (the Password message only appears in a
+  later, different state: once Email is filled in and Password is
+  still blank — do not check for it here). Verify that the exact text
+  "Email / Username is required" is present on the page — that alone
+  is sufficient proof both that inline validation fired and that the
+  login was blocked (a real validation error being shown means the
+  form did not submit); there is no separate "login was blocked" signal
+  to look for beyond this text being present. Do not fail this step for
+  not finding an additional, separate "login blocked" message — none
+  exists beyond this validation text.
+preconditions: []
+suite: Login

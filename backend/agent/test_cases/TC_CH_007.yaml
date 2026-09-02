@@ -1,0 +1,10 @@
+id: TC_CH_007
+title: Upload a file name in Japanese characters
+description: >
+  Attach a file whose name uses Japanese characters and submit the
+  upload. Verify the file name renders correctly (not mojibake) in the
+  creative list.
+preconditions:
+  - requires login
+  - "GAP: requires a real test file whose name uses Japanese characters — no such test media asset is configured for this project; not currently available."
+suite: Content Hub Extended

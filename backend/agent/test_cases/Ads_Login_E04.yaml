@@ -1,0 +1,10 @@
+id: Ads_Login_E04
+title: Session timeout behavior
+description: >
+  While logged in on the Dashboard, leave the session idle for the full
+  session timeout duration (e.g. 30 minutes), then click any menu item.
+  Verify the user is logged out and redirected to Sign In with a message
+  such as "Session expired, please log in again."
+preconditions:
+  - "GAP: requires waiting out a real ~30 minute session-timeout window — not practical for an automated per-run test (same category as the earlier LGN suite's session-timeout gap)"
+suite: Login

@@ -1,0 +1,11 @@
+id: GOAL-TC029
+title: Ad play goal — plays recorded as per planned
+description: Set an ad play goal, run the campaign, and monitor the play count. Verify ad plays are recorded
+  accurately and each play counts toward the goal.
+preconditions:
+- requires login
+- 'GAP: requires triggering a real ad request and observing whether/how an ad actually serves via the
+  real ad-delivery pipeline (dayparting/pacing/rotation/threshold enforcement etc.) — this is backend
+  ad-serving behavior, not something a browser clicking through the CMS admin UI can cause or verify;
+  needs a real or simulated ad-serving/player environment'
+suite: Player Testing

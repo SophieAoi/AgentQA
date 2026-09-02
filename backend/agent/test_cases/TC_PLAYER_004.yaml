@@ -1,0 +1,10 @@
+id: TC_PLAYER_004
+title: Pause line item stops player playback
+description: Pause an active line item, then check the player playback. Verify the player stops displaying
+  creatives for the paused line item.
+preconditions:
+- requires login
+- 'GAP: requires observing an actual physical DOOH player''s real-time playback state — this is outside
+  what any browser-driving UI automation tool can cause or verify, regardless of test fixtures; needs
+  real signage hardware/infrastructure integration'
+suite: Player Testing

@@ -1,0 +1,12 @@
+id: Ads_INV_07
+title: Inventory search by screen ID/name
+description: >
+  Navigate to the Inventory page. Read the visible inventory list and pick
+  a real screen ID or name currently shown in the table (don't assume a
+  specific hardcoded ID exists — use whatever's actually there). Enter
+  that value into the search bar. Verify the table filters to show the
+  matching inventory record(s).
+preconditions:
+  - requires login
+suite: Inventory
+essential: true

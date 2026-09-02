@@ -1,0 +1,10 @@
+id: Ads_ND_LT_228
+title: Creative assignment within allowed duration tolerance
+description: >
+  Create a Line Item with a 15s duration, then assign a creative asset
+  whose duration falls within the allowed tolerance (14s–15.99s). Verify
+  the creative is accepted.
+preconditions:
+  - requires login
+  - "GAP: requires a real test creative asset file with a specific duration (14s–15.99s) to upload/assign — no test media assets are configured for this project; not currently available"
+suite: Line Item

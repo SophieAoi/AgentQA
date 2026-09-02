@@ -1,0 +1,11 @@
+id: Ads_DL_LT_13
+title: Create New Deal with all mandatory fields
+description: >
+  Navigate to Deals, click Create New Deal, enter a unique deal name
+  (include a timestamp or random suffix so repeated runs never collide),
+  and fill in every other required field with valid values, then click
+  Create. Verify the deal is created successfully and appears in the
+  Deals list.
+preconditions:
+  - requires login
+suite: Deal Management

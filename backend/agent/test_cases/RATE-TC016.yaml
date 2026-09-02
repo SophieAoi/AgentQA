@@ -1,0 +1,10 @@
+id: RATE-TC016
+title: CPM deal — buyer bids exactly at floor
+description: Set a CPM floor of $5, have the DSP bid exactly $5, and observe serving. Verify the bid is
+  accepted at the floor and the ad serves and plays normally.
+preconditions:
+- requires login
+- 'GAP: requires a real DSP/SSP bidding integration (RTB auction mechanics, bid submission, rate sync)
+  — this project has no configured demand-side/supply-side ad-tech integration to exercise; not currently
+  available'
+suite: Player Testing

@@ -1,0 +1,9 @@
+id: TC_CR_002
+title: Video creative upload (.mp4)
+description: >
+  With the user logged in, go to the creatives section and upload an
+  .mp4 video file. Verify the video uploads successfully.
+preconditions:
+  - requires login
+  - "GAP: requires a real video creative asset to upload — no video test fixtures exist in this project. Source sheet marks this case Automated: Yes, but no such fixture is available here."
+suite: Creative Types

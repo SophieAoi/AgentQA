@@ -1,0 +1,8 @@
+id: Ads_Login_UI03
+title: Verify 'Forgot password?' link navigation
+description: >
+  Navigate to {{INFLUENCE_BASE_URL}}. On the sign-in page, click the
+  "Forgot password?" link. Verify the app navigates to a Password Recovery
+  / Reset page.
+preconditions: []
+suite: Login

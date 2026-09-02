@@ -1,0 +1,10 @@
+id: CRTV-TC037
+title: Unsupported file type uploaded
+description: Upload a creative as an unsupported .bmp format, assign it to a campaign, and trigger an
+  ad request. Verify the player cannot render the unsupported format (error logged, fallback shown).
+preconditions:
+- requires login
+- 'GAP: requires both a real test creative/media asset AND observing an actual physical player''s real-time
+  playback/rendering behavior — no test media assets are configured for this project, and real player
+  observation is outside what browser-driving UI automation can verify; not currently available'
+suite: Player Testing

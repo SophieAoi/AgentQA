@@ -1,0 +1,10 @@
+id: INF_LI_04
+title: Create Line Item — missing Flight Dates
+description: >
+  Open the Test Campaign, click "+ New Line Item", enter a Name, leave
+  Flight Dates unselected, fill every other required field with valid
+  values, then click Create Line Item. Verify a validation error is shown
+  for the Campaign Dates field and the Line Item is not created.
+preconditions:
+  - requires login
+suite: Line Item

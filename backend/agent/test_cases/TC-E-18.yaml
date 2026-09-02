@@ -1,0 +1,7 @@
+id: TC-E-18
+title: Navigate away without saving line item
+description: Add a schedule and save the schedule, then navigate away without clicking 'Create Line Item'.
+  Verify the schedule is discarded and not persisted without the line item itself being saved.
+preconditions:
+- requires login
+suite: Day Parting

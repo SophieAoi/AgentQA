@@ -1,0 +1,9 @@
+id: TC_CH_002
+title: Block folder creation without a name
+description: >
+  Open the New Folder panel and submit with the name field left blank.
+  Verify a "Folder name is required" error is shown and the panel stays
+  open.
+preconditions:
+  - requires login
+suite: Content Hub Extended

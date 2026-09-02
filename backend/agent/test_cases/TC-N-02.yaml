@@ -1,0 +1,8 @@
+id: TC-N-02
+title: Save — days now match existing (auto-merge)
+description: With Schedule 1 (Default, Tue, 08:00-10:00) and Schedule 2 (Default, Tue, 14:00-16:00) both
+  existing, open Schedule 2's editor, change nothing, and save. Verify a toast confirms the hours were
+  merged into Schedule 1 (Default), Schedule 1 shows both windows, and Schedule 2 is removed.
+preconditions:
+- requires login
+suite: Day Parting

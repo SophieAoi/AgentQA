@@ -1,0 +1,11 @@
+id: TC_PLAYER_003
+title: Deleting creative stops playback after sync
+description: Upload a valid creative, assign and approve it, wait until it is playing, then delete the
+  creative from the CMS and monitor the player. Verify the creative stops displaying after the next sync/update
+  cycle.
+preconditions:
+- requires login
+- 'GAP: requires both a real test creative/media asset AND observing an actual physical player''s real-time
+  playback/rendering behavior — no test media assets are configured for this project, and real player
+  observation is outside what browser-driving UI automation can verify; not currently available'
+suite: Player Testing

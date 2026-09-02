@@ -1,0 +1,10 @@
+id: INF_PG_05
+title: Verify Programmatic Type dropdown options
+description: >
+  Click "+ Create Campaign" and select Deal Type Programmatic, then open
+  the Programmatic Type dropdown. Verify it shows exactly these four
+  options: Programmatic Guaranteed, Preferred Deal, Private Auction, and
+  Evergreen PMP.
+preconditions:
+  - requires login
+suite: Campaign Creation

@@ -1,0 +1,8 @@
+id: TC-E-06
+title: Custom same date overlapping hours
+description: Add a Custom schedule for a given date with hours 08:00-12:00 and save, then add another
+  Custom schedule for the same date with hours 10:00-14:00 and save. Verify a merge is triggered and the
+  overlapping hours are combined into one entry for that date.
+preconditions:
+- requires login
+suite: Day Parting

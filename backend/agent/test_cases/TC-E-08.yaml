@@ -1,0 +1,7 @@
+id: TC-E-08
+title: Custom on weekday when Weekday schedule exists
+description: Add a Weekday schedule and save, then add a Custom schedule and pick a Monday. Verify a conflict
+  is raised because Monday is already covered by the Weekday schedule.
+preconditions:
+- requires login
+suite: Day Parting

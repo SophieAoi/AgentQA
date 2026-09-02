@@ -1,0 +1,11 @@
+id: Ads_ND_LT_279
+title: Duplicate brand name shows error (not HTTP 500)
+description: >
+  On the Brand creation page, create a brand with a specific, unique test
+  name (include a timestamp so this doesn't collide with previous runs).
+  Then attempt to create a second brand using that exact same name again.
+  Verify a toaster/inline error is shown indicating the duplicate brand
+  name, and that the app does not show a server error (HTTP 500) or crash.
+preconditions:
+  - requires login
+suite: Deal Management

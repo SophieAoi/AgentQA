@@ -1,0 +1,9 @@
+id: TC_PLAYER_001
+title: Invalid resolution creative upload rejected
+description: Create a deal and line item, then attempt to upload a creative with an unsupported resolution
+  (e.g. 100x100). Verify a validation error is displayed and the upload is prevented.
+preconditions:
+- requires login
+- 'GAP: requires a real test creative/media asset file with specific properties (resolution/duration/format/type)
+  to upload — no test media assets are configured for this project; not currently available'
+suite: Player Testing

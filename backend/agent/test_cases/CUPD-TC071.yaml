@@ -1,0 +1,11 @@
+id: CUPD-TC071
+title: Creative updated with new asset while live
+description: With a campaign playing Creative A, upload Creative A v2, approve it, and observe the next
+  ad call. Verify the player picks up the updated creative on the next ad call and the old version no
+  longer plays.
+preconditions:
+- requires login
+- 'GAP: requires both a real test creative/media asset AND observing an actual physical player''s real-time
+  playback/rendering behavior — no test media assets are configured for this project, and real player
+  observation is outside what browser-driving UI automation can verify; not currently available'
+suite: Player Testing

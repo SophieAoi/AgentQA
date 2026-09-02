@@ -1,0 +1,11 @@
+id: Ads_ND_LT_425
+title: Creative format filter shows other formats when Audio format selected (known bug)
+description: >
+  Create a campaign and select Audio format, then go to creative
+  assignment and open the creative selection list. Note: the originally
+  intended behavior was for only Audio creatives to display, but image
+  creatives are also currently shown — a known, separately tracked bug
+  (POD-02330, "Showing Audio format when choose video as creative").
+preconditions:
+  - requires login
+suite: Creative Types

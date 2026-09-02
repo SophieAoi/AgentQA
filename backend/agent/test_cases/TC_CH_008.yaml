@@ -1,0 +1,10 @@
+id: TC_CH_008
+title: Search creatives by file name
+description: >
+  With at least one creative with a known name already in Content Hub,
+  type a known file-name fragment into the search box. Verify the
+  matching creative is shown and unrelated creatives are hidden.
+preconditions:
+  - requires login
+  - "GAP: requires a real, already-uploaded test creative with a known file name to search for — no test media assets are configured for this project; not currently available."
+suite: Content Hub Extended

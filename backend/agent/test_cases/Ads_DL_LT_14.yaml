@@ -1,0 +1,17 @@
+id: Ads_DL_LT_14
+title: Create Deal without Brand Budget Goal (known bug)
+description: >
+  On the Create New Deal page, fill in every required field except Brand
+  Budget Goal (leave it empty), then click Create Deal. Note: the
+  originally intended behavior was for this to be blocked with a
+  validation error ("Brand Budget Goal is mandatory"), but the site
+  currently allows deal creation without it — a known, separately tracked
+  bug. Treat "the deal is created successfully despite the missing Brand
+  Budget Goal" as the current expected/pass condition for this check, not
+  a failure. (The source sheet marks this case "Automated: No", but it has
+  no apparent missing fixture or capability gap — it's the same shape as
+  other known-bug validation checks already automated in this suite, so
+  it's included here rather than deferred.)
+preconditions:
+  - requires login
+suite: Deal Management

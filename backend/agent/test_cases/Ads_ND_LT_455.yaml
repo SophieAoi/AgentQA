@@ -1,0 +1,12 @@
+id: Ads_ND_LT_455
+title: MP4 creatives not shown when MP4 disabled in inventory (known bug)
+description: >
+  With MP4 disabled in inventory, create a deal and open creative
+  selection. Note: the originally intended behavior was for MP4
+  creatives to NOT display, but they currently are displayed — a known,
+  separately tracked bug (POD-02493, "Disabled MP4 format in inventory
+  allows MP4 creatives in Influence").
+preconditions:
+  - requires login
+  - "GAP: requires an existing MP4 video creative already uploaded to select from in the picker — no video test fixtures exist in this project to create one. Source sheet marks this case Automated: Yes, but no such fixture is available here."
+suite: Creative Types

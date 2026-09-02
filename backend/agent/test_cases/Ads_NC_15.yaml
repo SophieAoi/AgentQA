@@ -1,0 +1,15 @@
+id: Ads_NC_15
+title: Successful direct campaign creation
+description: >
+  Click "Campaigns" in the main navigation, then click "New Campaign".
+  Enter a unique Campaign Name (include a timestamp or random suffix so
+  repeated runs never collide with a previous run's campaign). Leave Deal
+  Type as "Direct" (this is already the default selection — no need to
+  change it). Leave Country as its default value. Set Goal Type to
+  "None" (there is no separate "Goal Value" field on the real form).
+  Optionally enter a Budget, then click "Create Campaign". Verify the
+  campaign is created and shows status "Draft".
+preconditions:
+  - requires login
+suite: Campaign Creation
+essential: true

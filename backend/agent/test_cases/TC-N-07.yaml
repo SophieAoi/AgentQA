@@ -1,0 +1,8 @@
+id: TC-N-07
+title: Save blocked when no hours selected
+description: Open any schedule editor, click 'Deselect All', then click 'Save Schedule'. Verify the save
+  is blocked with the message 'Please select at least one hour' and the schedule is not saved.
+preconditions:
+- requires login
+suite: Day Parting
+essential: true

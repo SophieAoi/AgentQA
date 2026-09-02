@@ -1,0 +1,9 @@
+id: TC-C-03
+title: Primetime 3 spots + off-peak 1 spot on all days (limitation)
+description: Attempt to create a primetime schedule (18:00-22:00) at 3 spots and an off-peak schedule
+  (08:00-17:00) at 1 spot within the same all-days schedule. Verify the system cannot store two different
+  Spots/loop values for the same day set, and one value must be used for all time windows on that day
+  set (a documented limitation).
+preconditions:
+- requires login
+suite: Day Parting

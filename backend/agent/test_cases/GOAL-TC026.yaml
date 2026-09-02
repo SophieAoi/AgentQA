@@ -1,0 +1,12 @@
+id: GOAL-TC026
+title: Impressions goal updated mid-flight to higher target
+description: Set an initial impressions goal, deliver 50% of it, update the goal to a higher value, and
+  observe pacing. Verify the player recalculates pacing against the new goal and the delivery rate adjusts
+  accordingly.
+preconditions:
+- requires login
+- 'GAP: requires triggering a real ad request and observing whether/how an ad actually serves via the
+  real ad-delivery pipeline (dayparting/pacing/rotation/threshold enforcement etc.) — this is backend
+  ad-serving behavior, not something a browser clicking through the CMS admin UI can cause or verify;
+  needs a real or simulated ad-serving/player environment'
+suite: Player Testing

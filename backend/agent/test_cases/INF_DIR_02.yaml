@@ -1,0 +1,12 @@
+id: INF_DIR_02
+title: Create Direct campaign with all mandatory fields
+description: >
+  Click "+ Create Campaign". Enter a unique Campaign Name (include a
+  timestamp or random suffix so repeated runs never collide), select
+  Media Type DOOH, select Deal Type Direct, select a Client Type, select
+  a Country, enter a Total Budget, and select a Goal Type and Goal Value.
+  Click Create Campaign. Verify the campaign is created, the app redirects
+  to the Line Items page, and the campaign's status is Draft.
+preconditions:
+  - requires login
+suite: Campaign Creation
